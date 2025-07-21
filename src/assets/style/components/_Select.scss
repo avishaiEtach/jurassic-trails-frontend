@@ -1,0 +1,136 @@
+@use "../abstracts/" as abs;
+
+.select-selected-value {
+  background-color: transparent;
+  outline: 1px solid abs.$secondary;
+  cursor: pointer;
+  border: 0;
+  padding: abs.rem(8px) abs.rem(35px);
+  border-radius: 5px;
+  max-width: 200px;
+  color: rgba(abs.$secondary, 0.8);
+  min-width: 122px;
+  text-transform: capitalize;
+  &:hover,
+  &:focus-visible {
+    outline: 2px solid abs.$secondary;
+    color: rgba(abs.$secondary, 1);
+  }
+  &[data-disabled="true"] {
+    outline: 1px solid rgba(16, 16, 16, 0.3);
+    color: rgba(16, 16, 16, 0.3);
+  }
+  span {
+    display: flex;
+    align-items: center;
+    gap: abs.rem(3px);
+  }
+  svg {
+    width: 16px;
+    height: 16px;
+    path {
+      fill: rgba(abs.$secondary, 0.9);
+    }
+  }
+}
+
+.select-popover[data-trigger="Select"] {
+  width: var(--trigger-width);
+  background-color: abs.$accent;
+  border: 1px solid abs.$secondary;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(abs.$black, 0.15);
+  margin-top: abs.rem(4px);
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: fadeSlideIn 0.3s forwards;
+}
+
+.select-list-box-item {
+  position: relative;
+  padding: abs.rem(10px) abs.rem(16px);
+  cursor: pointer;
+  transition: background-color 0.2s;
+  text-transform: capitalize;
+
+  display: flex;
+  align-items: center;
+  gap: abs.rem(5px);
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  &[data-focus-visible] {
+    outline: none;
+  }
+
+  &[data-selected] {
+    background-color: abs.$primary;
+    color: abs.$white;
+    svg {
+      g {
+        path {
+          fill: abs.$white;
+        }
+      }
+    }
+  }
+
+  &[data-focused],
+  &[data-pressed] {
+    background-color: abs.$primary;
+    color: abs.$white;
+    svg {
+      g {
+        path {
+          fill: abs.$white;
+        }
+      }
+    }
+  }
+}
+
+.select-clear-button {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  cursor: default;
+  user-select: none;
+  position: absolute;
+  left: abs.rem(20px);
+  z-index: -1;
+  svg {
+    path {
+      transition: 0.4s ease;
+      fill: abs.$secondary;
+    }
+  }
+  &:hover,
+  &:focus-visible {
+    svg {
+      path {
+        fill: abs.$secondary;
+        opacity: 0.4;
+      }
+    }
+  }
+  &:focus-visible {
+    outline: none;
+  }
+  &[data-show="true"] {
+    opacity: 1;
+    cursor: pointer;
+    user-select: all;
+    position: relative;
+    z-index: 10;
+  }
+}
+
+.select-selected-value-item-container {
+  gap: abs.rem(5px);
+}

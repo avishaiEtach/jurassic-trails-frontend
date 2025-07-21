@@ -1,0 +1,87 @@
+@use "../abstracts/" as abs;
+
+.about-us-header-background {
+  @include abs.container-background-liner(100%, 300px, true, true);
+}
+
+.about-us-header {
+  text-transform: uppercase;
+  font-size: abs.rem(72px);
+  position: relative;
+  z-index: 10;
+}
+
+.about-us-our-team-container {
+  gap: abs.rem(45px);
+  margin-bottom: abs.$section-space;
+}
+
+.about-us-our-team-image-container {
+  flex: 0.8;
+  overflow: hidden;
+  border-radius: 10px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+}
+
+.about-us-our-team-text-container {
+  flex: 1;
+  h2 {
+    font-size: abs.rem(32px);
+    margin-bottom: abs.rem(15px);
+  }
+  p {
+    line-height: 1.6;
+  }
+}
+
+.about-us-goals-header {
+  text-align: center;
+  margin: 0 auto;
+  padding: abs.rem(15px);
+  font-size: abs.rem(42px);
+  margin-bottom: abs.rem(40px);
+}
+
+.about-us-goals-container {
+  @include abs.auto-grid(350px, 30px);
+  margin-bottom: abs.rem(calc(abs.$section-space + 20px));
+}
+
+.about-us-goal-card {
+  padding: abs.rem(20px);
+  outline: 2px solid abs.$secondary;
+  border-radius: abs.rem(20px);
+  background-color: rgba(abs.$accent, 0.4);
+}
+
+.about-us-goal-card-icon {
+  margin-bottom: abs.rem(10px);
+  display: inline-block;
+  svg {
+    width: 42px;
+    height: 42px;
+    path {
+      fill: abs.$secondary;
+      fill-opacity: 0.8;
+    }
+  }
+}
+
+.about-us-goal-card-header {
+  font-size: abs.rem(24px);
+  margin-bottom: abs.rem(10px);
+}
+
+.about-us-goal-card-text {
+  font-size: abs.rem(16px);
+  color: rgba(abs.$text, 0.7);
+}

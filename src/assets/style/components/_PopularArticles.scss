@@ -1,0 +1,67 @@
+@use "../abstracts/" as abs;
+
+.popular-articles-container {
+  margin-bottom: abs.rem(abs.$section-space);
+}
+
+.popular-articles-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: abs.rem(45px);
+  @media (width <= 1024px) {
+    padding-inline: abs.rem(15px);
+  }
+  @media (width <= 400px) {
+    padding-inline: 10px;
+    margin-bottom: abs.rem(24px);
+  }
+}
+
+.popular-articles-header {
+  font-size: abs.rem(42px);
+  text-transform: capitalize;
+  @media (width <= abs.$sm) {
+    font-size: abs.rem(32px);
+  }
+  @media (width <= 400px) {
+    font-size: abs.rem(28px);
+  }
+}
+
+.popular-articles-see-all-button {
+  border: 2px solid abs.$secondary;
+  background-color: transparent;
+  border-radius: 100px;
+  padding: abs.rem(12px) abs.rem(16px);
+  font-size: abs.rem(14px);
+  transition: 0.4s ease;
+  cursor: pointer;
+  span {
+    position: relative;
+    z-index: 1;
+    text-transform: capitalize;
+    line-height: 0.5;
+    font-size: abs.rem(14px);
+    color: abs.$secondary;
+    font-weight: 600;
+  }
+  &:hover,
+  &:focus-visible {
+    span {
+      color: abs.$text;
+    }
+    background-color: abs.$primary;
+    border-color: abs.$black;
+  }
+}
+
+.popular-articles-cards-container {
+  @include abs.auto-grid(390px, 30px);
+  @media (width <= 1024px) {
+    padding-inline: abs.rem(15px);
+  }
+  @media (width <= abs.$lg) {
+    gap: 20px;
+  }
+}

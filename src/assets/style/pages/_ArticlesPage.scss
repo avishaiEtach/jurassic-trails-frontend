@@ -1,0 +1,11 @@
+@use "../abstracts/" as abs;
+
+.articles-cards-grid {
+  @include abs.auto-grid(390px, 30px);
+  &[data-items-length="2"],
+  &[data-items-length="3"] {
+    display: flex;
+    gap: abs.rem(30px);
+  }
+  margin-bottom: abs.rem(abs.$section-space);
+}

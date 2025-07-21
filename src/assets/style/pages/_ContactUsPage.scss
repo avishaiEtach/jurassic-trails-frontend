@@ -1,0 +1,113 @@
+@use "../abstracts/" as abs;
+
+.contact-us-main-container {
+  display: flex;
+  gap: abs.rem(40px);
+  margin-bottom: abs.rem(80px);
+  justify-content: center;
+  & > * {
+    flex-basis: 50%;
+  }
+}
+
+.contact-us-image-container {
+  img {
+    border-radius: 10px;
+    width: 100%;
+  }
+}
+
+.contact-us-form-container {
+  padding: abs.rem(30px);
+  background: #fdfdf9;
+  border: 2px solid abs.$secondary;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  h2 {
+    font-size: abs.rem(42px);
+    margin-bottom: abs.rem(25px);
+  }
+}
+
+.contact-us-form-input-container {
+  margin-bottom: abs.rem(20px);
+  label {
+    display: block;
+    margin-bottom: abs.rem(7px);
+    font-weight: 700;
+  }
+  input[type="email"] {
+    width: 80%;
+  }
+
+  textarea {
+    display: block;
+    max-width: 460px;
+    min-width: 360px;
+  }
+
+  input,
+  textarea {
+    padding: 0.75em 1em;
+    margin-bottom: 1em;
+    font-size: abs.rem(16px);
+    color: abs.$text;
+    background-color: #fdfdf9;
+    border: 1px solid rgba(abs.$secondary, 0.4);
+    border-radius: 6px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    &::placeholder {
+      color: rgba(abs.$text, 0.4);
+    }
+  }
+
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border-color: abs.$primary;
+    box-shadow: 0 0 0 3px rgba(168, 198, 108, 0.3);
+  }
+}
+
+.name-inputs-container {
+  display: flex;
+  gap: abs.rem(10px);
+}
+
+.contact-us-form-submit {
+  background-color: abs.$secondary;
+  border: none;
+  border-radius: 50px;
+  padding: abs.rem(8px) abs.rem(12px);
+  font-size: abs.rem(16px);
+  text-transform: capitalize;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: abs.$primary;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out;
+    z-index: 0;
+  }
+  span {
+    position: relative;
+    z-index: 1;
+    color: abs.$white;
+  }
+  &:hover,
+  &:focus-visible {
+    span {
+      color: abs.$text;
+    }
+    &::before {
+      transform: translateX(0);
+    }
+  }
+}

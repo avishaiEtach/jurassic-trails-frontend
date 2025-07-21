@@ -1,0 +1,193 @@
+@use "../abstracts/" as abs;
+
+$hero-container-background-linear-color1: #b2ac9047;
+$hero-container-background-linear-color2: #a8c66cb5;
+
+.hero-container-background {
+  @include abs.container-background-liner(100%, 100%, true, true);
+  max-height: 740px;
+  // background: linear-gradient(
+  //   180deg,
+  //   $hero-container-background-linear-color1,
+  //   $hero-container-background-linear-color2
+  // );
+  // position: relative;
+  // display: flex;
+  // align-items: center;
+  // margin-bottom: abs.rem(abs.$section-space);
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   background-image: url(../images/bk.png);
+  //   filter: blur(3px);
+  // }
+}
+
+.hero-main-container {
+  position: relative;
+  z-index: 10;
+  padding-block: abs.rem(70px);
+  @media (width <= abs.$md) {
+    padding-inline: abs.rem(30px);
+  }
+  h1 {
+    text-align: center;
+    font-size: abs.rem(120px);
+    line-height: 1.1;
+    margin-bottom: abs.rem(50px);
+    @media (width >= abs.$md) and (width <= abs.$lg) {
+      font-size: abs.rem(72px);
+    }
+    @media (width <= abs.$md) or (width = 912px) {
+      font-size: abs.rem(62px);
+    }
+  }
+}
+
+.hero-search-dino-box-container {
+  background-color: abs.$accent;
+  color: abs.$text;
+  justify-self: center;
+  padding: abs.rem(40px);
+  max-width: 370px;
+  border-radius: 10px;
+  box-shadow: 0 32px 48px -8px rgba(abs.$black, 0.4);
+  outline: 2px solid abs.$secondary;
+  @media (width <= 400px) {
+    padding-inline: abs.rem(15px);
+  }
+  h3 {
+    font-size: abs.rem(24px);
+    margin-bottom: abs.rem(20px);
+    text-align: center;
+  }
+  p {
+    font-size: abs.rem(14px);
+    text-align: center;
+    margin-bottom: abs.rem(20px);
+  }
+}
+
+.hero-search-form {
+  border: 2px solid abs.$secondary;
+  border-radius: 50px;
+  padding: abs.rem(8px);
+  gap: abs.rem(8px);
+  @media (width <= abs.$md) {
+    justify-content: space-between;
+  }
+  button {
+    background-color: abs.$secondary;
+    border: none;
+    border-radius: 50px;
+    padding: abs.rem(8px) abs.rem(12px);
+    font-size: abs.rem(12px);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: abs.$primary;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease-out;
+      z-index: 0;
+    }
+    span {
+      position: relative;
+      z-index: 1;
+      color: abs.$white;
+    }
+    &:hover,
+    &:focus-visible {
+      span {
+        color: abs.$text;
+      }
+      &::before {
+        transform: translateX(0);
+      }
+    }
+  }
+  &:has(input:focus-visible),
+  &:has(button:focus-visible),
+  &:has(button:active) {
+    border: 2px solid abs.$black;
+  }
+}
+
+.hero-autocomplete-combo-box {
+  padding-top: abs.rem(3px);
+  width: 65%;
+  margin-inline-end: abs.rem(10px);
+  @media (width <= abs.$sm) {
+    margin-inline-end: 0;
+  }
+  @media (width <= 400px) {
+    width: 60%;
+  }
+}
+
+.hero-autocomplete-input {
+  color: abs.$text;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  &:focus-visible {
+    outline: none;
+  }
+  &::placeholder {
+    color: rgba(abs.$text, 0.8);
+    font-size: abs.rem(14px);
+  }
+  &[data-focused] {
+    outline-offset: -1px;
+  }
+}
+
+.hero-autocomplete-popover[data-trigger="ComboBox"] {
+  width: var(--trigger-width);
+  background-color: abs.$accent;
+  border: 1px solid abs.$secondary;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(abs.$black, 0.15);
+  margin-top: abs.rem(4px);
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: fadeSlideIn 0.3s forwards;
+}
+
+.hero-autocomplete-list-box-item {
+  padding: abs.rem(10px) abs.rem(16px);
+  cursor: pointer;
+  transition: background-color 0.2s;
+  text-transform: capitalize;
+
+  &[data-focus-visible] {
+    outline: none;
+  }
+
+  &[data-selected] {
+    background-color: abs.$primary;
+    color: abs.$white;
+  }
+
+  &[data-focused],
+  &[data-pressed] {
+    background-color: abs.$primary;
+    color: abs.$white;
+  }
+}
+
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

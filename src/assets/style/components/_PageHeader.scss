@@ -1,0 +1,23 @@
+@use "../abstracts/" as abs;
+
+.page-header-background {
+  &[data-repeat-icons="false"][data-with-margin="false"] {
+    @include abs.container-background-liner(100%, 300px, false, false);
+  }
+  &[data-repeat-icons="true"][data-with-margin="false"] {
+    @include abs.container-background-liner(100%, 300px, false, true);
+  }
+  &[data-repeat-icons="false"][data-with-margin="true"] {
+    @include abs.container-background-liner(100%, 300px, true, false);
+  }
+  &[data-repeat-icons="true"][data-with-margin="true"] {
+    @include abs.container-background-liner(100%, 300px, true, true);
+  }
+}
+
+.page-header-title {
+  text-transform: uppercase;
+  font-size: abs.rem(72px);
+  position: relative;
+  z-index: 10;
+}

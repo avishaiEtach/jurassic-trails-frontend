@@ -1,0 +1,96 @@
+@use "../abstracts/" as abs;
+
+.article-card-container {
+  // max-width: 390px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  padding-bottom: abs.rem(8px);
+  cursor: pointer;
+  &:focus-visible,
+  &:hover {
+    .article-card-image {
+      background-size: 150%;
+    }
+    .article-card-button {
+      span {
+        color: abs.$text;
+      }
+      &::before {
+        transform: translateX(0);
+      }
+    }
+  }
+}
+
+.article-card-image {
+  height: 300px;
+  background-position: center;
+  border-radius: 15px;
+  background-size: 120%;
+  background-repeat: no-repeat;
+  transition: background-size 0.8s ease;
+  margin-bottom: abs.rem(15px);
+}
+
+.article-card-header {
+  font-size: abs.rem(22px);
+  line-height: 1.1;
+  text-wrap: pretty;
+  margin-bottom: abs.rem(8px);
+  text-transform: capitalize;
+  height: 50px;
+  position: relative;
+  z-index: 10;
+}
+
+.article-card-details-main-container {
+  gap: abs.rem(45px);
+  margin-bottom: abs.rem(15px);
+}
+
+.article-card-details-container {
+  gap: abs.rem(7px);
+  font-size: abs.rem(14px);
+  color: rgba(abs.$text, 0.7);
+  svg {
+    width: 16px;
+    height: 16px;
+    path {
+      fill: rgba(abs.$text, 0.7);
+    }
+  }
+}
+
+.article-card-button {
+  width: fit-content;
+  border: 2px solid abs.$secondary;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: abs.rem(12px) abs.rem(16px);
+  font-size: abs.rem(14px);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: abs.$primary;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out;
+    z-index: 0;
+  }
+  span {
+    position: relative;
+    z-index: 1;
+    color: abs.$secondary;
+    text-transform: capitalize;
+  }
+  &:focus-visible {
+    user-select: none;
+  }
+}

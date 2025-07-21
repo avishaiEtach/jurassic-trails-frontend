@@ -1,0 +1,29 @@
+//BASE
+@use "../style/base";
+
+//COMPONENTS
+
+@use "./components/PageHeader";
+@use "./components/Modal";
+@use "./components/Loader";
+@use "./components/Autocomplete";
+@use "./components/Select";
+@use "./components/AppHeader";
+@use "./components/AppFooter";
+@use "./components/Hero";
+@use "./components/FeaturedDinos";
+@use "./components/DinoCard";
+@use "./components/DinoModal";
+@use "./components/ArticleCard";
+@use "./components/PopularArticles";
+@use "./components/DinosFilter";
+@use "./components/ArticlesFilter";
+
+//PAGES
+@use "./pages/ArticlePage";
+@use "./pages/AboutUsPage";
+@use "./pages/ContactUsPage";
+@use "./pages/DinosaursPage";
+@use "./pages/ArticlesPage";
+
+@use "../style/abstracts/" as abs;

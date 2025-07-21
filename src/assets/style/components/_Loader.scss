@@ -1,0 +1,66 @@
+@use "../abstracts/" as abs;
+
+.loader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  gap: abs.rem(55px);
+  background: abs.$background;
+  position: relative;
+}
+
+.loader-footprint-container {
+  gap: abs.rem(30px);
+  margin-inline-end: abs.rem(80px);
+}
+
+.footprint {
+  width: 20px;
+  height: 20px;
+  svg {
+    width: 64px;
+    height: 64px;
+    path {
+      fill: abs.$secondary;
+    }
+  }
+  border-radius: 50%;
+  animation: walkAway 2s infinite;
+}
+
+.footprint:nth-child(1) {
+  transform: rotate(-20deg);
+  animation-delay: 0s;
+}
+.footprint:nth-child(2) {
+  transform: rotate(20deg);
+  animation-delay: 0.5s;
+}
+.footprint:nth-child(3) {
+  transform: rotate(-15deg);
+  animation-delay: 1s;
+}
+
+.loader-text {
+  font-size: 1.2rem;
+  color: abs.$secondary;
+  font-family: sans-serif;
+  padding-inline-end: abs.rem(45px);
+}
+
+@keyframes walkAway {
+  0% {
+    transform: scale(1) translateY(0) rotate(-20deg);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.7) translateY(5px) rotate(20deg);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(0.4) translateY(10px) rotate(-15deg);
+    opacity: 0;
+  }
+}
