@@ -9,11 +9,18 @@
   font-size: abs.rem(72px);
   position: relative;
   z-index: 10;
+  @media (width <= abs.$md) {
+    font-size: abs.rem(52px);
+  }
 }
 
 .about-us-our-team-container {
   gap: abs.rem(45px);
   margin-bottom: abs.$section-space;
+  @media (width <= abs.$md) {
+    flex-direction: column;
+    padding-inline: abs.rem(20px);
+  }
 }
 
 .about-us-our-team-image-container {
@@ -49,11 +56,20 @@
   padding: abs.rem(15px);
   font-size: abs.rem(42px);
   margin-bottom: abs.rem(40px);
+  @media (width <= abs.$md) {
+    font-size: abs.rem(32px);
+  }
 }
 
 .about-us-goals-container {
   @include abs.auto-grid(350px, 30px);
   margin-bottom: abs.rem(calc(abs.$section-space + 20px));
+  @media (width >= abs.$md) and (width <= abs.$xl) {
+    padding-inline: abs.rem(30px);
+  }
+  @media (width <= abs.$md) {
+    padding-inline: abs.rem(30px);
+  }
 }
 
 .about-us-goal-card {
