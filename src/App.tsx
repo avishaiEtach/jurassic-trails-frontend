@@ -51,7 +51,7 @@ function App() {
         {/* <HomePage /> */}
         {/* <AboutUsPage /> */}
         {/* <ArticlePage /> */}
-        <ContactUsPage />
+        {/* <ContactUsPage /> */}
         {/* <DinosaursPage /> */}
         {/* <ArticlesPage /> */}
       </main>

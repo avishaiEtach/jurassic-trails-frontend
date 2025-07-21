@@ -1,7 +1,12 @@
 @use "../abstracts/" as abs;
 
 .dinos-cards-grid {
-  @include abs.auto-grid(250px, 30px);
+  // @include abs.auto-grid(250px, 30px);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(0, 250px));
+  gap: abs.rem(30px);
+  padding-inline: abs.rem(10px);
+  justify-content: center;
   &[data-items-length="2"],
   &[data-items-length="3"] {
     display: flex;

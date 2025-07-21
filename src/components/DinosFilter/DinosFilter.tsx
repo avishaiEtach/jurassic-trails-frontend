@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { DinosFilterComps } from "./hooks/DinosFilterComps";
 import { Button, Label, ListBox, ListBoxItem } from "react-aria-components";
-import { SortKey, useDinosFilter } from "./hooks/useDinosFilter";
+import { DinoSortKey, useDinosFilter } from "./hooks/useDinosFilter";
 import { Autocomplete } from "../Autocomplete/Autocomplete";
 import { dietArray, dinosaurs } from "../../assets/data/consts";
 import { Select } from "../Select/Select";
@@ -27,7 +27,7 @@ export const DinosFilter = (props: DinosFilterProps) => {
   return (
     <div className="wrapper">
       <section className="dinos-filter-main-container">
-        <div className="flex align-center dinos-filter-select-container">
+        <div className="flex dinos-filter-select-container">
           <div>
             <Label data-label-show={!!sort} className={`dinos-filter-label`}>
               Sort by
@@ -35,7 +35,7 @@ export const DinosFilter = (props: DinosFilterProps) => {
             <Select
               isDisabled={!!searchedDino}
               items={dietArray}
-              onSelectionChange={(key) => setSort(key as SortKey)}
+              onSelectionChange={(key) => setSort(key as DinoSortKey)}
               selectValue={SortValue(sort, sortMap)}
               selectedKey={sort}
               CustomListBox={SortListBox(sortMap)}

@@ -13,7 +13,7 @@ interface articleToPage {
 
 export const useArticlePage = () => {
   //const { id } = useParams();
-  const id = "2";
+  const id = "1";
   const [articleToPage, setArticleToPage] = useState<articleToPage | null>(
     null
   );
@@ -57,7 +57,6 @@ export const useArticlePage = () => {
       if (imageRef.current) {
         const rect = imageRef.current.getBoundingClientRect();
         const windowHeight = window.innerHeight;
-
         if (rect.bottom >= 0 && rect.top <= windowHeight) {
           imageRef.current.style.backgroundPositionY = -scrolled * 0.5 + "px";
         }
