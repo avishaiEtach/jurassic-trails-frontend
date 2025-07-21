@@ -49,9 +49,9 @@ function App() {
       {/* <AppHeader /> */}
       <main>
         {/* <HomePage /> */}
-        <AboutUsPage />
+        {/* <AboutUsPage /> */}
         {/* <ArticlePage /> */}
-        {/* <ContactUsPage /> */}
+        <ContactUsPage />
         {/* <DinosaursPage /> */}
         {/* <ArticlesPage /> */}
       </main>

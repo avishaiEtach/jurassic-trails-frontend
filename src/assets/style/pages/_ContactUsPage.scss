@@ -8,12 +8,19 @@
   & > * {
     flex-basis: 50%;
   }
+  @media (width <= abs.$md) {
+    flex-direction: column-reverse;
+    padding-inline: abs.rem(20px);
+  }
 }
 
 .contact-us-image-container {
   img {
     border-radius: 10px;
     width: 100%;
+  }
+  @media (width <= abs.$xl) {
+    display: none;
   }
 }
 
@@ -26,6 +33,9 @@
   h2 {
     font-size: abs.rem(42px);
     margin-bottom: abs.rem(25px);
+    @media (width <= abs.$md) {
+      font-size: abs.rem(28px);
+    }
   }
 }
 
@@ -44,6 +54,10 @@
     display: block;
     max-width: 460px;
     min-width: 360px;
+    @media (width <= abs.$md) {
+      max-width: 270px;
+      min-width: 240px;
+    }
   }
 
   input,
@@ -72,6 +86,12 @@
 .name-inputs-container {
   display: flex;
   gap: abs.rem(10px);
+  @media (width <= abs.$md) {
+    flex-direction: column;
+    .react-aria-Input:first-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .contact-us-form-submit {

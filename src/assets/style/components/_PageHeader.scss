@@ -13,6 +13,9 @@
   &[data-repeat-icons="true"][data-with-margin="true"] {
     @include abs.container-background-liner(100%, 300px, true, true);
   }
+  @media (width <= abs.$md) {
+    margin-bottom: abs.rem(25px) !important;
+  }
 }
 
 .page-header-title {
@@ -20,4 +23,7 @@
   font-size: abs.rem(72px);
   position: relative;
   z-index: 10;
+  @media (width <= abs.$md) {
+    font-size: abs.rem(52px);
+  }
 }
