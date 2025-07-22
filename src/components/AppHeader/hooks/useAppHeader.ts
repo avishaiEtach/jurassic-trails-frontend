@@ -1,8 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { ROUTES } from "../../routes/routes";
 
 export const useAppHeader = () => {
   const [showNav, setShowNav] = useState(false);
   const navRef = useRef<HTMLUListElement>(null);
+  const navigate = useNavigate();
   useEffect(() => {
     document.addEventListener("click", handleClick);
     document.addEventListener("keydown", handleKeyDown);
@@ -38,5 +41,10 @@ export const useAppHeader = () => {
     e.stopPropagation();
     setShowNav(!showNav);
   };
-  return { showNav, onClickCloseNav, onClickHamburger, navRef };
+
+  const onClickLogo = () => {
+    navigate(ROUTES.HOME);
+  };
+
+  return { showNav, onClickCloseNav, onClickHamburger, navRef, onClickLogo };
 };

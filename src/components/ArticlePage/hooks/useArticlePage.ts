@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { articles } from "../../../assets/data/consts";
 import { Article } from "../../../types/article";
 import frontMatter from "front-matter";
+import { useParams } from "react-router-dom";
 
 interface articleToPage {
   title: Article["title"];
@@ -12,8 +13,8 @@ interface articleToPage {
 }
 
 export const useArticlePage = () => {
-  //const { id } = useParams();
-  const id = "1";
+  const { id } = useParams();
+  // const id = "2";
   const [articleToPage, setArticleToPage] = useState<articleToPage | null>(
     null
   );
@@ -74,6 +75,9 @@ export const useArticlePage = () => {
     month: "long",
     day: "numeric",
   });
+
+  console.log("articleToPage", articleToPage);
+
   return {
     articleToPage,
     loading,

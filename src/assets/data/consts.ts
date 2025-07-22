@@ -15,4 +15,18 @@ const dietArray = [
   "insectivore",
 ] as Dinosaur["diet"][];
 
-export { dinosaurs, articles, dietArray };
+const images = import.meta.glob("../../assets/images/*.png", {
+  eager: true,
+  import: "default",
+});
+
+const imageMap: Record<string, string> = {};
+
+for (const path in images) {
+  const fileName = path.split("/").pop(); // למשל: 'rex.png'
+  if (fileName) {
+    imageMap[fileName] = images[path] as string;
+  }
+}
+
+export { dinosaurs, articles, dietArray, imageMap };

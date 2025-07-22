@@ -2,6 +2,7 @@ import React from "react";
 import { Dinosaur } from "../../types/dinosaur";
 import { useDinoModal } from "./hooks/useDinoModal";
 import { DinoModalComps } from "./hooks/DinoModalComps";
+import { imageMap } from "../../assets/data/consts";
 
 interface DinoModalProps {
   dino: Dinosaur;
@@ -13,7 +14,10 @@ export const DinoModal = ({ dino }: DinoModalProps) => {
   return (
     <div className="dino-modal-main-container">
       <div className="dino-modal-image-container">
-        <img src={dino.card_image} alt="" />
+        <img
+          src={imageMap[dino.card_image.split("/").pop() as string]}
+          alt=""
+        />
       </div>
       <div className="flex column" style={{ flex: 1 }}>
         <div className="dino-modal-info-container">

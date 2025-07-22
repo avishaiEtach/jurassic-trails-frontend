@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   ComboBox,
   Input,
@@ -7,8 +7,12 @@ import {
   Popover,
 } from "react-aria-components";
 import { dinosaurs } from "../../assets/data/consts";
+import { useNavigate } from "react-router-dom";
+import { ROUTES } from "../routes/routes";
 
 export const Hero = () => {
+  const [selectDinoId, setSelectDinoId] = useState<string>("");
+  const navigate = useNavigate();
   return (
     <section className="hero-container-background">
       <div className="wrapper">
@@ -20,8 +24,20 @@ export const Hero = () => {
               Search our museum to uncover amazing dinosaurs, rare fossils, and
               prehistoric secrets.
             </p>
-            <form className="flex hero-search-form">
-              <ComboBox className="hero-autocomplete-combo-box">
+            <form
+              className="flex hero-search-form"
+              onSubmit={(e) => {
+                e.preventDefault();
+                navigate(`${ROUTES.DINOSAURS}/?dinoId=${selectDinoId}`);
+              }}
+            >
+              <ComboBox
+                onSelectionChange={(value) => {
+                  setSelectDinoId(value as string);
+                  // navigate(`${ROUTES.DINOSAURS}/?dinoId=${value}`);
+                }}
+                className="hero-autocomplete-combo-box"
+              >
                 <Input
                   className="hero-autocomplete-input"
                   placeholder="Search for Dinosaur..."

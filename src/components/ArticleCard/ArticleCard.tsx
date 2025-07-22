@@ -3,18 +3,30 @@ import { Button, Focusable, Pressable } from "react-aria-components";
 import DateIcon from "../../assets/images/date.svg?react";
 import ClockIcon from "../../assets/images/clock.svg?react";
 import { Article } from "../../types/article";
+import { imageMap } from "../../assets/data/consts";
+import { useNavigate } from "react-router-dom";
+import { ROUTES } from "../routes/routes";
 
 interface ArticleCardProps {
   article: Article;
 }
 
 export const ArticleCard = ({ article }: ArticleCardProps) => {
+  const navigate = useNavigate();
   return (
-    <Pressable>
+    <Pressable
+      onClick={() => {
+        navigate(ROUTES.ARTICLE_PAGE(article.id));
+      }}
+    >
       <div className="article-card-container">
         <div
           className="article-card-image"
-          style={{ backgroundImage: `url(${article.main_image})` }}
+          style={{
+            backgroundImage: `url(${
+              imageMap[article.main_image.split("/").pop() as string]
+            })`,
+          }}
         ></div>
         <h3 className="article-card-header">{article.title}</h3>
         <div className="flex article-card-details-main-container">

@@ -1,23 +1,30 @@
 import React, { useEffect, useRef, useState } from "react";
 import logo from "../../assets/images/logo2.png";
-import { Button } from "react-aria-components";
+import { Button, Pressable } from "react-aria-components";
 import HamburgerIcon from "../../assets/images/hamburger.svg?react";
 import { useAppHeader } from "./hooks/useAppHeader";
+import { navRoutes } from "../routes/routesConfig";
+import { Link, NavLink, useNavigate } from "react-router-dom";
+import { ROUTES } from "../routes/routes";
 
 export const AppHeader = () => {
-  const { showNav, onClickCloseNav, onClickHamburger, navRef } = useAppHeader();
+  const { showNav, onClickCloseNav, onClickHamburger, navRef, onClickLogo } =
+    useAppHeader();
   return (
     <header className="header-background">
       <div data-show={showNav} className="nav-over-bg"></div>
       <div className="wrapper header-container">
-        <div className="logo-image-container">
-          <img src={logo} alt="" />
-        </div>
+        <Pressable onClick={onClickLogo}>
+          <div className="logo-image-container">
+            <img src={logo} alt="" />
+          </div>
+        </Pressable>
         <ul ref={navRef} data-open={showNav}>
-          <li>Articles</li>
-          <li>Categories</li>
-          <li>About</li>
-          <li>Concat</li>
+          {navRoutes.map((route) => (
+            <li key={route.path}>
+              <NavLink to={route.path}>{route.label}</NavLink>
+            </li>
+          ))}
           <li className="nav-button-close">
             <Button onClick={onClickCloseNav}>
               <span>close</span>
