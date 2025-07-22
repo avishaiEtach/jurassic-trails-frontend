@@ -48,7 +48,7 @@ function App() {
     <div className="app-container">
       {/* <AppHeader /> */}
       <main>
-        {/* <HomePage /> */}
+        <HomePage />
         {/* <AboutUsPage /> */}
         {/* <ArticlePage /> */}
         {/* <ContactUsPage /> */}

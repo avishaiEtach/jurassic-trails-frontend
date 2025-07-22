@@ -4,11 +4,19 @@
   padding: abs.rem(20px);
   display: flex;
   gap: abs.rem(50px);
+  @media (width <= 780px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .dino-modal-image-container {
   width: 330px;
   height: 420px;
+  @media (width <= 400px) {
+    width: 280px;
+    height: 300px;
+  }
   img {
     width: 100%;
     height: 100%;
@@ -76,4 +84,7 @@
 
 .dino-modal-sort-description {
   line-height: 1.8;
+  @media (width <= 780px) {
+    margin-bottom: abs.rem(25px);
+  }
 }
