@@ -17,7 +17,7 @@ export const AppFooterComps = () => {
 
   const FooterInfo = () => {
     return (
-      <div>
+      <div className="footer-info-container">
         <Pressable>
           <span className="footer-logo">Jurassic Trails</span>
         </Pressable>

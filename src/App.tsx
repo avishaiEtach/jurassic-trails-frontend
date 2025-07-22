@@ -55,7 +55,7 @@ function App() {
         {/* <DinosaursPage /> */}
         {/* <ArticlesPage /> */}
       </main>
-      {/* <AppFooter /> */}
+      <AppFooter />
     </div>
   );
 }
