@@ -2,6 +2,9 @@
 
 .header-background {
   background-color: abs.$primary;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .header-container {
@@ -21,9 +24,40 @@
         color: abs.$secondary;
       }
     }
+
+    @media (width <= 680px) {
+      z-index: 1000;
+      position: fixed;
+      flex-direction: column;
+      background-color: abs.$primary;
+      padding-top: abs.rem(35px);
+      width: 50%;
+      height: 100dvh;
+      top: 0;
+      li {
+        padding: abs.rem(15px) abs.rem(25px);
+        &:not(:last-of-type) {
+          &:hover,
+          &.active {
+            background-color: abs.$secondary;
+            color: abs.$text;
+          }
+        }
+      }
+      transform: translateX(-100vw);
+      opacity: 0;
+      &[data-open="true"] {
+        transition: 0.3s ease-in;
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
   }
   .demo {
     width: 120px;
+    @media (width <= 680px) {
+      display: none;
+    }
   }
 
   .logo-image-container {
@@ -34,5 +68,86 @@
       height: 100%;
       object-fit: cover;
     }
+  }
+}
+
+.nav-over-bg {
+  z-index: 200;
+  position: fixed;
+  background-color: rgba(0 0 0 / 0.7);
+  width: 100%;
+  height: 100dvh;
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.3s ease-in;
+  &[data-show="true"] {
+    opacity: 1;
+  }
+  @media (width > 680px) {
+    display: none;
+  }
+}
+
+.nav-button-close {
+  margin-top: auto;
+  @media (width > 680px) {
+    display: none;
+  }
+  button {
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-size: abs.rem(18px);
+    background-color: abs.$accent;
+    outline: 1px solid abs.$secondary;
+    border: 0;
+    width: 100%;
+    padding-block: abs.rem(8px);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: abs.$secondary;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease-out;
+      z-index: 0;
+    }
+    span {
+      position: relative;
+      z-index: 1;
+    }
+    &:hover,
+    &:focus-visible {
+      span {
+        color: abs.$white;
+      }
+      &::before {
+        transform: translateX(0);
+      }
+    }
+  }
+}
+
+.hamburger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: abs.rem(8px);
+  background-color: abs.$secondary;
+  border: 0;
+  border-radius: 5px;
+  margin-inline-end: abs.rem(20px);
+  svg {
+    path {
+      stroke: abs.$accent;
+    }
+  }
+  @media (width > 680px) {
+    display: none;
   }
 }

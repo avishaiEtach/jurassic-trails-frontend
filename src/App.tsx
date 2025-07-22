@@ -46,7 +46,7 @@ import { ArticlesPage } from "./pages/ArticlesPage";
 function App() {
   return (
     <div className="app-container">
-      {/* <AppHeader /> */}
+      <AppHeader />
       <main>
         <HomePage />
         {/* <AboutUsPage /> */}
