@@ -19,7 +19,6 @@ export const useArticlePage = () => {
     null
   );
   const [loading, setLoading] = useState(true);
-  const imageRef = useRef<HTMLDivElement>(null);
 
   //// UseEffect to get the relevant md file to the article id
   useEffect(() => {
@@ -51,23 +50,6 @@ export const useArticlePage = () => {
     }
   };
 
-  //// UseEffect to change the main article image to scroll image
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const scrolled = window.scrollY;
-  //     if (imageRef.current) {
-  //       const rect = imageRef.current.getBoundingClientRect();
-  //       const windowHeight = window.innerHeight;
-  //       if (rect.bottom >= 0 && rect.top <= windowHeight) {
-  //         imageRef.current.style.backgroundPositionY = -scrolled * 0.5 + "px";
-  //       }
-  //     }
-  //   };
-  //   window.addEventListener("scroll", handleScroll);
-  //   handleScroll();
-  //   return () => window.removeEventListener("scroll", handleScroll);
-  // }, []);
-
   const articleDate = new Date(
     articleToPage?.post_date ?? new Date()
   ).toLocaleString("en-US", {
@@ -87,7 +69,6 @@ export const useArticlePage = () => {
     loading,
     id,
     articleDate,
-    imageRef,
     articleHeroImage,
   };
 };

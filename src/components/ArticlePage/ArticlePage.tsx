@@ -7,14 +7,8 @@ import { ArticlePageComps } from "./hooks/ArticlePageComps";
 import { imageMap } from "../../assets/data/consts";
 
 export const ArticlePage = () => {
-  const {
-    articleToPage,
-    loading,
-    id,
-    articleDate,
-    imageRef,
-    articleHeroImage,
-  } = useArticlePage();
+  const { articleToPage, loading, id, articleDate, articleHeroImage } =
+    useArticlePage();
   const {
     markdownComponents,
     ArticlePageLoadingComp,
@@ -49,21 +43,6 @@ export const ArticlePage = () => {
         </div>
       </section>
       <section className="wrapper">
-        {/* <div
-          style={{
-            backgroundImage: `url(${
-              imageMap[articleToPage.main_image.split("/").pop() as string]
-            })`,
-          }}
-          className="article-page-main-image"
-          ref={imageRef}
-        > */}
-        {/* <img
-            ref={imageRef}
-            src={imageMap[articleToPage.main_image.split("/").pop() as string]}
-            alt=""
-          /> */}
-        {/* </div> */}
         <div className="article-page-hero-container">
           <div
             className="article-page-hero-blur-bg"
