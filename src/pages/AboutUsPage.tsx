@@ -70,7 +70,7 @@ export const AboutUsPage = () => {
           {goalsCards.map((goal, index) => (
             <div
               data-aos="fade-up"
-              data-aos-delay={`${(index + 1) * 500}`}
+              data-aos-delay={`${index * 500}`}
               key={goal.title}
               className="about-us-goal-card"
             >
