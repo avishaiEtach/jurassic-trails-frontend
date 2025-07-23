@@ -7,8 +7,14 @@ import { ArticlePageComps } from "./hooks/ArticlePageComps";
 import { imageMap } from "../../assets/data/consts";
 
 export const ArticlePage = () => {
-  const { articleToPage, loading, id, articleDate, imageRef } =
-    useArticlePage();
+  const {
+    articleToPage,
+    loading,
+    id,
+    articleDate,
+    imageRef,
+    articleHeroImage,
+  } = useArticlePage();
   const {
     markdownComponents,
     ArticlePageLoadingComp,
@@ -20,9 +26,6 @@ export const ArticlePage = () => {
   }
 
   if (!id || !articleToPage) {
-    console.log("aaaa");
-    console.log(loading);
-
     return <ArticlePageNotFoundComp />;
   }
   return (
@@ -46,7 +49,7 @@ export const ArticlePage = () => {
         </div>
       </section>
       <section className="wrapper">
-        <div
+        {/* <div
           style={{
             backgroundImage: `url(${
               imageMap[articleToPage.main_image.split("/").pop() as string]
@@ -54,8 +57,25 @@ export const ArticlePage = () => {
           }}
           className="article-page-main-image"
           ref={imageRef}
-        >
-          {/* <img src={articleToPage.main_image} alt="" /> */}
+        > */}
+        {/* <img
+            ref={imageRef}
+            src={imageMap[articleToPage.main_image.split("/").pop() as string]}
+            alt=""
+          /> */}
+        {/* </div> */}
+        <div className="article-page-hero-container">
+          <div
+            className="article-page-hero-blur-bg"
+            style={{
+              background: `url(${articleHeroImage}) center center / cover no-repeat`,
+            }}
+          ></div>
+          <img
+            src={articleHeroImage}
+            className="article-page-hero-image"
+            alt="Hero"
+          />
         </div>
         <article className="article-page-content-container">
           <ReactMarkdown components={markdownComponents}>

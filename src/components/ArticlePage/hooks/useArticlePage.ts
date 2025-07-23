@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from "react";
-import { articles } from "../../../assets/data/consts";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { articles, imageMap } from "../../../assets/data/consts";
 import { Article } from "../../../types/article";
 import frontMatter from "front-matter";
 import { useParams } from "react-router-dom";
@@ -52,21 +52,21 @@ export const useArticlePage = () => {
   };
 
   //// UseEffect to change the main article image to scroll image
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrolled = window.scrollY;
-      if (imageRef.current) {
-        const rect = imageRef.current.getBoundingClientRect();
-        const windowHeight = window.innerHeight;
-        if (rect.bottom >= 0 && rect.top <= windowHeight) {
-          imageRef.current.style.backgroundPositionY = -scrolled * 0.5 + "px";
-        }
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-    handleScroll();
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const scrolled = window.scrollY;
+  //     if (imageRef.current) {
+  //       const rect = imageRef.current.getBoundingClientRect();
+  //       const windowHeight = window.innerHeight;
+  //       if (rect.bottom >= 0 && rect.top <= windowHeight) {
+  //         imageRef.current.style.backgroundPositionY = -scrolled * 0.5 + "px";
+  //       }
+  //     }
+  //   };
+  //   window.addEventListener("scroll", handleScroll);
+  //   handleScroll();
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
 
   const articleDate = new Date(
     articleToPage?.post_date ?? new Date()
@@ -76,7 +76,11 @@ export const useArticlePage = () => {
     day: "numeric",
   });
 
-  console.log("articleToPage", articleToPage);
+  const articleHeroImage = useMemo(() => {
+    if (articleToPage) {
+      return imageMap[articleToPage.main_image.split("/").pop() as string];
+    } else return "";
+  }, [articleToPage]);
 
   return {
     articleToPage,
@@ -84,5 +88,6 @@ export const useArticlePage = () => {
     id,
     articleDate,
     imageRef,
+    articleHeroImage,
   };
 };
