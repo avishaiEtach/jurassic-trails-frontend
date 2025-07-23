@@ -1,26 +1,44 @@
-import React from "react";
+import React, { ReactElement, useMemo, useState } from "react";
 import FacebookIcon from "../../../assets/images/facebook.svg?react";
 import XIcon from "../../../assets/images/X.svg?react";
 import InstagramIcon from "../../../assets/images/instagram.svg?react";
 import LinkedinIcon from "../../../assets/images/linkedin.svg?react";
 import { Pressable } from "react-aria-components";
 import { navRoutes } from "../../routes/routesConfig";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { ROUTES } from "../../routes/routes";
+import { Modal } from "../../Modal/Modal";
+import { PrivacyPolicy } from "../../PrivacyPolicy/PrivacyPolicy";
+import { TermsOfUse } from "../../TermsOfUse/TermsOfUse";
+import { FAQ } from "../../FAQ/FAQ";
 
 export const AppFooterComps = () => {
-  const legalAndAccessibility = ["Privacy Policy", "Terms Of Use", "FAQ"];
+  const [chosenLegal, setChosenLegal] = useState<{
+    label: string;
+    comp: ReactElement;
+  } | null>(null);
+
+  const legalAndAccessibility = [
+    { label: "Privacy Policy", comp: <PrivacyPolicy /> },
+    { label: "Terms Of Use", comp: <TermsOfUse /> },
+    { label: "FAQ", comp: <FAQ /> },
+  ];
   const links = [
     <FacebookIcon />,
     <XIcon />,
     <InstagramIcon />,
     <LinkedinIcon />,
   ];
+  const navigate = useNavigate();
 
   const FooterInfo = () => {
     return (
       <div className="footer-info-container">
-        <Pressable>
+        <Pressable
+          onClick={() => {
+            navigate(ROUTES.HOME);
+          }}
+        >
           <span className="footer-logo">Jurassic Trails</span>
         </Pressable>
         <p className="footer-description">
@@ -55,8 +73,13 @@ export const AppFooterComps = () => {
           <h4 className="footer-nav-bar-item-header">Legal & Accessibility</h4>
           <ul className="footer-nav-bar-item-list">
             {legalAndAccessibility.map((item) => (
-              <Pressable key={item}>
-                <li>{item}</li>
+              <Pressable
+                onClick={() => {
+                  setChosenLegal(item);
+                }}
+                key={item.label}
+              >
+                <li>{item.label}</li>
               </Pressable>
             ))}
           </ul>
@@ -71,9 +94,15 @@ export const AppFooterComps = () => {
             ))}
           </ul>
         </div>
+        <Modal
+          isOpen={!!chosenLegal}
+          onOpenChange={() => {
+            setChosenLegal(null);
+          }}
+          modalChildElement={chosenLegal?.comp ?? <></>}
+        />
       </div>
     );
   };
-
   return { FooterInfo, FooterLinkTree };
 };

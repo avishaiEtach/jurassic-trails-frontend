@@ -15,6 +15,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import "./assets/style/main.scss";
 import { useEffect } from "react";
+import { ScrollToTop } from "./components/ScrollToTop/ScrollToTop";
 
 function App() {
   useEffect(() => {
@@ -22,6 +23,7 @@ function App() {
   }, []);
   return (
     <div className="app-container">
+      <ScrollToTop />
       <AppHeader />
       <main>
         <Routes>
