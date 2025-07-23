@@ -8,10 +8,15 @@ export const ContactUsPage = () => {
     <div>
       <PageHeader title="Contact us" />
       <div className="wrapper contact-us-main-container">
-        <div className="contact-us-image-container">
+        <div data-aos="fade-right" className="contact-us-image-container">
           <img src={contact_us_image} alt="" />
         </div>
-        <div className="contact-us-form-container">
+        <div
+          data-aos="fade-left"
+          data-aos-mobile="fade-up"
+          data-aos-delay="500"
+          className="contact-us-form-container"
+        >
           <form>
             <h2>Let's get you connected</h2>
             <div className="contact-us-form-input-container">

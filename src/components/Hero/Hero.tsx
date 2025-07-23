@@ -17,8 +17,12 @@ export const Hero = () => {
     <section className="hero-container-background">
       <div className="wrapper">
         <div className="hero-main-container">
-          <h1>Explore The World of Dino's</h1>
-          <div className="hero-search-dino-box-container">
+          <h1 data-aos="fade-up">Explore The World of Dino's</h1>
+          <div
+            data-aos="fade-up"
+            data-aos-delay="500"
+            className="hero-search-dino-box-container"
+          >
             <h3>Discover Dinosaurs in Our Collection</h3>
             <p>
               Search our museum to uncover amazing dinosaurs, rare fossils, and

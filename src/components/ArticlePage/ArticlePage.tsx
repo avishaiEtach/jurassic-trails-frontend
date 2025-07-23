@@ -4,7 +4,6 @@ import DateIcon from "../../assets/images/date.svg?react";
 import ClockIcon from "../../assets/images/clock.svg?react";
 import { useArticlePage } from "./hooks/useArticlePage";
 import { ArticlePageComps } from "./hooks/ArticlePageComps";
-import { imageMap } from "../../assets/data/consts";
 
 export const ArticlePage = () => {
   const { articleToPage, loading, id, articleDate, articleHeroImage } =

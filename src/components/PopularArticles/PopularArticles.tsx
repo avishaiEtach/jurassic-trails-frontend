@@ -13,7 +13,7 @@ export const PopularArticles = () => {
           <span>see all {"->"}</span>
         </Button>
       </div>
-      <div className="popular-articles-cards-container">
+      <div data-aos="fade-up" className="popular-articles-cards-container">
         {popularArticles.map((article) => (
           <ArticleCard key={article.id} article={article} />
         ))}

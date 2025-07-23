@@ -31,10 +31,17 @@ export const AboutUsPage = () => {
         </div>
       </div>
       <section className="wrapper flex about-us-our-team-container">
-        <div className="about-us-our-team-image-container">
+        <div
+          data-aos="fade-right"
+          className="about-us-our-team-image-container"
+        >
           <img src={office} alt="" />
         </div>
-        <div className="about-us-our-team-text-container">
+        <div
+          data-aos="fade-left"
+          data-aos-delay="500"
+          className="about-us-our-team-text-container"
+        >
           <h2>Our Team</h2>
           <p>
             Our passionate team of researchers, writers, and dinosaur
@@ -60,8 +67,13 @@ export const AboutUsPage = () => {
           about dinosaurs.
         </h2>
         <div className="about-us-goals-container">
-          {goalsCards.map((goal) => (
-            <div key={goal.title} className="about-us-goal-card">
+          {goalsCards.map((goal, index) => (
+            <div
+              data-aos="fade-up"
+              data-aos-delay={`${(index + 1) * 500}`}
+              key={goal.title}
+              className="about-us-goal-card"
+            >
               <span className="about-us-goal-card-icon">{goal.icon}</span>
               <h3 className="about-us-goal-card-header">{goal.title}</h3>
               <p className="about-us-goal-card-text">{goal.text}</p>

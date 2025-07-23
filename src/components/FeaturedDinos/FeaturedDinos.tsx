@@ -15,7 +15,7 @@ export const FeaturedDinos = () => {
           <span>see all {"->"}</span>
         </Button>
       </div>
-      <div className="flex featured-dinos-cards-container">
+      <div data-aos="fade-up" className="flex featured-dinos-cards-container">
         {featuredDinos.map((dino) => (
           <DinoCard key={dino.id} dino={dino} />
         ))}

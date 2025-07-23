@@ -11,9 +11,15 @@ import { AppHeader } from "./components/AppHeader/AppHeader";
 import { AppFooter } from "./components/AppFooter/AppFooter";
 import { Route, Routes } from "react-router-dom";
 import { routesConfig } from "./components/routes/routesConfig";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import "./assets/style/main.scss";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    Aos.init({ duration: 2000, once: true });
+  }, []);
   return (
     <div className="app-container">
       <AppHeader />
