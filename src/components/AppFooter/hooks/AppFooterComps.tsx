@@ -4,9 +4,11 @@ import XIcon from "../../../assets/images/X.svg?react";
 import InstagramIcon from "../../../assets/images/instagram.svg?react";
 import LinkedinIcon from "../../../assets/images/linkedin.svg?react";
 import { Pressable } from "react-aria-components";
+import { navRoutes } from "../../routes/routesConfig";
+import { NavLink } from "react-router-dom";
+import { ROUTES } from "../../routes/routes";
 
 export const AppFooterComps = () => {
-  const pages = ["Articles", "Categories", "About us", "Contact"];
   const legalAndAccessibility = ["Privacy Policy", "Terms Of Use", "FAQ"];
   const links = [
     <FacebookIcon />,
@@ -39,8 +41,13 @@ export const AppFooterComps = () => {
         <div className="footer-nav-bar-item">
           <h4 className="footer-nav-bar-item-header">Pages</h4>
           <ul className="footer-nav-bar-item-list">
-            {pages.map((page) => (
-              <li key={page}>{page}</li>
+            <li>
+              <NavLink to={ROUTES.HOME}>Home</NavLink>
+            </li>
+            {navRoutes.map((route) => (
+              <li key={route.path}>
+                <NavLink to={route.path}>{route.label}</NavLink>
+              </li>
             ))}
           </ul>
         </div>

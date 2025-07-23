@@ -72,7 +72,8 @@
     transition: 0.4s;
     cursor: pointer;
     &:hover,
-    &:focus-visible {
+    &:focus-visible,
+    .active {
       color: abs.$secondary;
       text-decoration: underline;
     }
