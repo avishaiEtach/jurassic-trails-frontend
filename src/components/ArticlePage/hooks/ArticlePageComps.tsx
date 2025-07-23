@@ -1,6 +1,7 @@
 import React from "react";
 import { Components } from "react-markdown";
 import { Loader } from "../../Loader/Loader";
+import { Error404Page } from "../../../pages/Error404Page";
 
 export const ArticlePageComps = () => {
   const markdownComponents: Components = {
@@ -21,11 +22,7 @@ export const ArticlePageComps = () => {
   };
 
   const ArticlePageNotFoundComp = () => {
-    return (
-      <div className="wrapper">
-        <h2>Article not found.</h2>
-      </div>
-    );
+    return <Error404Page />;
   };
 
   return {

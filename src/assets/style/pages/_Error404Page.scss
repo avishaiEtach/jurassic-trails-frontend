@@ -1,0 +1,72 @@
+@use "../abstracts/" as abs;
+
+.error-page-container {
+  text-align: center;
+  margin-bottom: abs.rem(24px);
+}
+
+.error-page-main-header {
+  font-size: abs.rem(300px);
+  margin-bottom: abs.rem(24px);
+  @media (width <= abs.$md) {
+    font-size: abs.rem(180px);
+  }
+  @media (width <= 400px) {
+    font-size: abs.rem(150px);
+  }
+}
+
+.error-page-semi-header {
+  font-size: abs.rem(42px);
+  margin-bottom: abs.rem(24px);
+  @media (width <= 400px) {
+    font-size: abs.rem(32px);
+  }
+}
+
+.error-page-text {
+  font-size: abs.rem(20px);
+  margin-bottom: abs.rem(32px);
+  @media (width <= 400px) {
+    padding-inline: abs.rem(15px);
+  }
+}
+
+.error-page-button {
+  width: fit-content;
+  border: 2px solid abs.$secondary;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: abs.rem(12px) abs.rem(16px);
+  font-size: abs.rem(14px);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: abs.$primary;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out;
+    z-index: 0;
+  }
+  span {
+    position: relative;
+    z-index: 1;
+    color: abs.$secondary;
+    text-transform: capitalize;
+  }
+  &:focus-visible,
+  &:hover {
+    span {
+      color: abs.$text;
+    }
+    &::before {
+      transform: translateX(0);
+    }
+  }
+}
