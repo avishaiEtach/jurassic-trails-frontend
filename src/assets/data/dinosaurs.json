@@ -178,5 +178,77 @@
     "weight": 7.5,
     "foundIn": "North America",
     "description": "Ankylosaurus was a heavily armored herbivorous dinosaur from the Late Cretaceous. It had bony plates covering its body and a massive club-like tail, used to defend against predators."
+  },
+  {
+    "id": "16",
+    "name": "carnotaurus",
+    "card_image": "./src/assets/images/carnotaurus.png",
+    "period": "Late Cretaceous",
+    "diet": "carnivore",
+    "length": 8,
+    "height": 3,
+    "weight": 2.5,
+    "foundIn": "South America",
+    "description": "Carnotaurus was a bipedal carnivorous dinosaur known for its short, horned skull and extremely small arms. It was likely a fast predator, hunting smaller dinosaurs with the help of its powerful legs and jaws."
+  },
+  {
+    "id": "17",
+    "name": "giganotosaurus",
+    "card_image": "./src/assets/images/giganotosaurus.png",
+    "period": "Late Cretaceous",
+    "diet": "carnivore",
+    "length": 13,
+    "height": 4.5,
+    "weight": 8,
+    "foundIn": "South America",
+    "description": "Giganotosaurus was one of the largest known terrestrial carnivores, even larger than Tyrannosaurus rex in length. It had a massive skull and sharp teeth adapted for hunting large herbivorous dinosaurs in its ecosystem."
+  },
+  {
+    "id": "18",
+    "name": "ichthyosaurus",
+    "card_image": "./src/assets/images/ichthyosaurus.png",
+    "period": "Early Jurassic",
+    "diet": "piscivore",
+    "length": 2.5,
+    "height": 0.5,
+    "weight": 0.09,
+    "foundIn": "Europe",
+    "description": "Ichthyosaurus was a marine reptile that resembled modern dolphins. It had a streamlined body, long snout with conical teeth, and large eyes, allowing it to hunt fish and squid efficiently in the prehistoric oceans."
+  },
+  {
+    "id": "19",
+    "name": "xixianykus",
+    "card_image": "./src/assets/images/xixianykus.png",
+    "period": "Late Cretaceous",
+    "diet": "insectivore",
+    "length": 0.5,
+    "height": 0.25,
+    "weight": 0.002,
+    "foundIn": "Asia",
+    "description": "Xixianykus was a small, fast-running dinosaur from the Alvarezsauridae family. With long legs and a lightweight body, it was likely adapted for chasing and catching insects, making it one of the smallest known non-avian dinosaurs."
+  },
+  {
+    "id": "20",
+    "name": "plesiosaurus",
+    "card_image": "./src/assets/images/plesiosaurus.png",
+    "period": "Early Jurassic",
+    "diet": "piscivore",
+    "length": 3.5,
+    "height": 1,
+    "weight": 0.5,
+    "foundIn": "Europe",
+    "description": "Plesiosaurus was a marine reptile known for its long neck, small head, and four flipper-like limbs. It swam gracefully through prehistoric seas, using its sharp teeth to catch fish and other small sea creatures."
+  },
+  {
+    "id": "21",
+    "name": "quetzalcoatlus",
+    "card_image": "./src/assets/images/quetzalcoatlus.png",
+    "period": "Late Cretaceous",
+    "diet": "carnivore",
+    "length": 10,
+    "height": 5,
+    "weight": 0.25,
+    "foundIn": "North America",
+    "description": "Quetzalcoatlus was one of the largest known flying animals of all time. This pterosaur had a massive wingspan, possibly over 10 meters, and a long, toothless beak. It likely fed on small animals and carrion, both in flight and while walking on land."
   }
 ]

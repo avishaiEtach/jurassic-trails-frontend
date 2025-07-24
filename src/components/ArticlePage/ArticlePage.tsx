@@ -42,7 +42,7 @@ export const ArticlePage = () => {
         </div>
       </section>
       <section className="wrapper">
-        <div className="article-page-hero-container">
+        <div data-aos="fade-up" className="article-page-hero-container">
           <div
             className="article-page-hero-blur-bg"
             style={{
@@ -55,7 +55,7 @@ export const ArticlePage = () => {
             alt="Hero"
           />
         </div>
-        <article className="article-page-content-container">
+        <article data-aos="fade-up" className="article-page-content-container">
           <ReactMarkdown components={markdownComponents}>
             {articleToPage.content}
           </ReactMarkdown>

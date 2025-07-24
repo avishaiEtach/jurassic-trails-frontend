@@ -3,7 +3,7 @@
     "id": "1",
     "title": "How Nature Shaped the Lives of Dinosaurs",
     "main_image": "./src/assets/images/a1.png",
-    "fileName": "how-dinosaurs-lived",
+    "fileName": "3de1525c-fdf3-4f8b-8291-7b76c24fb62d",
     "post_date": "2025-03-10T22:00:00.000Z",
     "time_to_read": 3
   },
@@ -11,7 +11,7 @@
     "id": "2",
     "title": "The Age of Dinosaurs: Mesozoic Era Explained",
     "main_image": "./src/assets/images/a2.png",
-    "fileName": "how-dinosaurs-lived",
+    "fileName": "f79be178-71af-41be-9ef1-30c4ca580409",
     "post_date": "2025-04-02T22:00:00.000Z",
     "time_to_read": 5
   },
@@ -19,7 +19,7 @@
     "id": "3",
     "title": "Top 10 Biggest Dinosaurs Ever Discovered",
     "main_image": "./src/assets/images/a3.png",
-    "fileName": "how-dinosaurs-lived",
+    "fileName": "cb4e3e70-e6b4-469e-9698-c21f12f1297c",
     "post_date": "2025-02-02T22:00:00.000Z",
     "time_to_read": 2
   },
@@ -27,7 +27,7 @@
     "id": "4",
     "title": "Why Did Dinosaurs Have Feathers?",
     "main_image": "./src/assets/images/a4.png",
-    "fileName": "how-dinosaurs-lived",
+    "fileName": "6c1bb51d-da34-47d8-8f2d-6cfc5f9e522d",
     "post_date": "2024-11-07T22:00:00.000Z",
     "time_to_read": 7
   },
@@ -35,7 +35,7 @@
     "id": "5",
     "title": "Carnivores vs Herbivores: Dinosaur Survival Strategies",
     "main_image": "./src/assets/images/a5.png",
-    "fileName": "how-dinosaurs-lived",
+    "fileName": "a3ca6240-c687-4141-a3aa-0a2c9cb8701a",
     "post_date": "2024-08-24T22:00:00.000Z",
     "time_to_read": 4
   },
@@ -43,7 +43,7 @@
     "id": "6",
     "title": "Fossil Hunting: How Paleontologists Discover Dinosaurs",
     "main_image": "./src/assets/images/a6.png",
-    "fileName": "how-dinosaurs-lived",
+    "fileName": "3b935af7-eaa6-4737-89bb-f958da553212",
     "post_date": "2024-08-12T22:00:00.000Z",
     "time_to_read": 2
   }
