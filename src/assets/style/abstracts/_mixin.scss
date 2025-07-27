@@ -156,16 +156,25 @@
   h3 {
     font-size: functions.rem(18px);
     margin-bottom: functions.rem(12px);
+    margin-top: functions.rem(10px);
     color: variables.$secondary;
   }
   h4 {
     font-size: functions.rem(16px);
     margin-bottom: functions.rem(12px);
+    margin-top: functions.rem(10px);
     color: variables.$secondary;
   }
   ul {
     padding-inline-start: functions.rem(20px);
     margin-bottom: functions.rem(15px);
+    &:has(li code) {
+      list-style: none;
+      padding-inline-start: 0;
+      code {
+        display: none;
+      }
+    }
     li {
       &:not(:last-of-type) {
         margin-bottom: functions.rem(8px);
