@@ -46,5 +46,21 @@
     "fileName": "3b935af7-eaa6-4737-89bb-f958da553212",
     "post_date": "2024-08-12T22:00:00.000Z",
     "time_to_read": 2
+  },
+  {
+    "id": "7",
+    "title": "From Bones to Beasts: How Scientists Reconstruct Dinosaurs",
+    "main_image": "./src/assets/images/a7.png",
+    "fileName": "a75a9947-de9b-4620-b5a1-5a3af84d5a47",
+    "post_date": "2025-04-10T09:00:00.000Z",
+    "time_to_read": 3
+  },
+  {
+    "id": "8",
+    "title": "Mistaken Monsters: Famous Paleontology Mistakes in History",
+    "main_image": "./src/assets/images/a8.png",
+    "fileName": "649ed5d8-81aa-4777-8729-401e46257805",
+    "post_date": "2023-09-12T09:00:00.000Z",
+    "time_to_read": 10
   }
 ]

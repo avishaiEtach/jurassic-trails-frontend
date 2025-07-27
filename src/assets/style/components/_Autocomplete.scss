@@ -75,6 +75,10 @@
   opacity: 0;
   transform: translateY(-10px);
   animation: fadeSlideIn 0.3s forwards;
+  .react-aria-ListBox {
+    max-height: 400px;
+    overflow: hidden;
+  }
 }
 
 .autocomplete-list-box-item {

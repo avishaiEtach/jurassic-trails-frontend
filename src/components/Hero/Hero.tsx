@@ -48,7 +48,7 @@ export const Hero = () => {
                 />
                 <Popover className="hero-autocomplete-popover">
                   <ListBox>
-                    {dinosaurs.slice(0, 8).map((dino) => (
+                    {dinosaurs.map((dino) => (
                       <ListBoxItem
                         className="hero-autocomplete-list-box-item"
                         id={dino.id}

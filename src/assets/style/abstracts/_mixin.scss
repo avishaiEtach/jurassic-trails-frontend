@@ -156,6 +156,12 @@
   h3 {
     font-size: functions.rem(18px);
     margin-bottom: functions.rem(12px);
+    color: variables.$secondary;
+  }
+  h4 {
+    font-size: functions.rem(16px);
+    margin-bottom: functions.rem(12px);
+    color: variables.$secondary;
   }
   ul {
     padding-inline-start: functions.rem(20px);
@@ -170,6 +176,16 @@
       padding: 0;
       display: flex;
       gap: functions.rem(30px);
+      img {
+        max-width: 250px;
+      }
+      @media (width <= variables.$sm) {
+        flex-wrap: wrap;
+        img {
+          margin: 0;
+          max-width: 300px;
+        }
+      }
       p[data-image-state="standalone"] {
         img {
           float: none;
@@ -185,17 +201,31 @@
     // object-fit: contain;
     // border-radius: 15px;
     // outline: 2px solid variables.$accent;
-    width: 100%;
-    max-width: 600px;
-    margin: 24px auto;
+
+    // width: 100%;
+    // max-width: 600px;
+    // margin: 24px auto;
+    // display: block;
+    // border-radius: 8px;
+    // object-fit: cover;
+    // object-position: 30%;
+    // aspect-ratio: 16 / 9;
+
+    max-width: 400px;
     display: block;
-    border-radius: 8px;
+    margin: 24px auto;
+    aspect-ratio: 4/3;
     object-fit: cover;
-    object-position: 30%;
-    aspect-ratio: 16 / 9;
+    border-radius: 8px;
+    @media (width <= variables.$sm) {
+      max-width: 360px;
+    }
+    @media (width <= 400px) {
+      max-width: 330px;
+    }
   }
   em {
-    font-style: italic;
+    font-family: Inter-Italic;
     font-size: functions.rem(16px);
     padding-inline-start: 0;
   }

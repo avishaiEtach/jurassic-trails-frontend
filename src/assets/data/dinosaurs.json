@@ -250,5 +250,113 @@
     "weight": 0.25,
     "foundIn": "North America",
     "description": "Quetzalcoatlus was one of the largest known flying animals of all time. This pterosaur had a massive wingspan, possibly over 10 meters, and a long, toothless beak. It likely fed on small animals and carrion, both in flight and while walking on land."
+  },
+  {
+    "id": "22",
+    "name": "dilophosaurus",
+    "card_image": "./src/assets/images/dilophosaurus.png",
+    "period": "Early Jurassic",
+    "diet": "carnivore",
+    "length": 7,
+    "height": 2,
+    "weight": 0.4,
+    "foundIn": "North America",
+    "description": "Dilophosaurus was a medium-sized carnivorous dinosaur recognizable by the pair of crests on its head. It was an agile predator that likely hunted small to medium-sized animals. Unlike its fictional depiction, there is no evidence it had a frill or spit venom."
+  },
+  {
+    "id": "23",
+    "name": "therizinosaurus",
+    "card_image": "./src/assets/images/therizinosaurus.png",
+    "period": "Late Cretaceous",
+    "diet": "herbivore",
+    "length": 10,
+    "height": 4.5,
+    "weight": 5,
+    "foundIn": "Asia",
+    "description": "Therizinosaurus was a large, herbivorous theropod dinosaur known for its enormous claws, which could reach up to a meter in length. Despite its fearsome appearance, it likely used its claws for defense and foraging among vegetation."
+  },
+  {
+    "id": "24",
+    "name": "yangchuanosaurus",
+    "card_image": "./src/assets/images/yangchuanosaurus.png",
+    "period": "Late Jurassic",
+    "diet": "carnivore",
+    "length": 9,
+    "height": 3.5,
+    "weight": 3.5,
+    "foundIn": "Asia",
+    "description": "Yangchuanosaurus was a large carnivorous theropod dinosaur from the Late Jurassic period. It had powerful jaws and sharp teeth, hunting other large dinosaurs in what is now China."
+  },
+  {
+    "id": "25",
+    "name": "euhelopus",
+    "card_image": "./src/assets/images/euhelopus.png",
+    "period": "Early Cretaceous",
+    "diet": "herbivore",
+    "length": 20,
+    "height": 6,
+    "weight": 15,
+    "foundIn": "Asia",
+    "description": "Euhelopus was a large, long-necked sauropod dinosaur from the Early Cretaceous of Asia. It had a long tail and neck, feeding on high vegetation with its small head."
+  },
+  {
+    "id": "26",
+    "name": "rebbachisaurus",
+    "card_image": "./src/assets/images/rebbachisaurus.png",
+    "period": "Late Cretaceous",
+    "diet": "herbivore",
+    "length": 17,
+    "height": 4.5,
+    "weight": 7,
+    "foundIn": "North Africa",
+    "description": "Rebbachisaurus was a sauropod dinosaur from the Late Cretaceous of North Africa, with fossils found in Morocco, Algeria, and Niger. It reached lengths of 14–20 meters and weighed about 7 metric tons. It had a medium-length neck, whip-like tail similar to Diplodocus, and a small head with thin teeth adapted for eating plants."
+  },
+  {
+    "id": "27",
+    "name": "minmi",
+    "card_image": "./src/assets/images/minmi.png",
+    "period": "Early Cretaceous",
+    "diet": "herbivore",
+    "length": 3,
+    "height": 1,
+    "weight": 0.2,
+    "foundIn": "Australia",
+    "description": "Minmi was a small armored dinosaur from the Early Cretaceous of Australia. It was covered in bony plates and likely used its armor for protection against predators."
+  },
+  {
+    "id": "28",
+    "name": "styracosaurus",
+    "card_image": "./src/assets/images/styracosaurus.png",
+    "period": "Late Cretaceous",
+    "diet": "herbivore",
+    "length": 5.5,
+    "height": 1.8,
+    "weight": 3,
+    "foundIn": "North America",
+    "description": "Styracosaurus was a herbivorous ceratopsian dinosaur known for its impressive array of long horns extending from its neck frill and a large nasal horn. It lived during the Late Cretaceous and used its horns for defense and display."
+  },
+  {
+    "id": "29",
+    "name": "oviraptor",
+    "card_image": "./src/assets/images/oviraptor.png",
+    "period": "Late Cretaceous",
+    "diet": "omnivore",
+    "length": 2,
+    "height": 1,
+    "weight": 0.02,
+    "foundIn": "Mongolia",
+    "description": "Oviraptor was a small, bird-like dinosaur with a beaked mouth and a crest on its head. Once thought to steal eggs, it is now believed to have cared for its own. It was an omnivore, possibly eating small animals, plants, and eggs."
+  },
+  {
+    "id": "30",
+    "name": "iguanodon",
+    "card_image": "./src/assets/images/iguanodon.png",
+    "period": "Early Cretaceous",
+    "diet": "herbivore",
+    "length": 10,
+    "height": 3,
+    "weight": 4,
+    "foundIn": "Europe",
+    "description": "Iguanodon was a large herbivorous dinosaur known for its thumb spike, which may have been used for defense. It could walk on both two and four legs and lived in herds. Its beak and teeth were adapted for chewing tough plant material."
   }
 ]

@@ -74,7 +74,7 @@ export const Autocomplete = ({
         </div>
         <Popover className="autocomplete-popover">
           <ListBox>
-            {items.slice(0, 8).map((item) => (
+            {items.map((item) => (
               <ListBoxItem
                 className="autocomplete-list-box-item"
                 id={item[keyId]}
