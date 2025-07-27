@@ -1,7 +1,7 @@
 @use "../abstracts/" as abs;
 
 .articles-cards-grid {
-  @include abs.auto-grid(390px, 30px);
+  @include abs.auto-grid(300px, 30px);
   padding-inline: abs.rem(15px);
   &[data-items-length="2"],
   &[data-items-length="3"] {
