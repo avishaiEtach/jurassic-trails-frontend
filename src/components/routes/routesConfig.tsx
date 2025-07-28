@@ -14,6 +14,12 @@ export const routesConfig = [
     showInNav: false,
   },
   {
+    path: ROUTES.DINOSAURS,
+    element: <DinosaursPage />,
+    label: "Dinosaurs",
+    showInNav: true,
+  },
+  {
     path: ROUTES.ARTICLES,
     element: <ArticlesPage />,
     label: "Articles",
@@ -23,12 +29,6 @@ export const routesConfig = [
     path: `${ROUTES.ARTICLES}/:id`,
     element: <ArticlePage />,
     showInNav: false,
-  },
-  {
-    path: ROUTES.DINOSAURS,
-    element: <DinosaursPage />,
-    label: "Dinosaurs",
-    showInNav: true,
   },
   {
     path: ROUTES.ABOUT_US,

@@ -165,7 +165,8 @@
     margin-top: functions.rem(10px);
     color: variables.$secondary;
   }
-  ul {
+  ul,
+  ol {
     padding-inline-start: functions.rem(20px);
     margin-bottom: functions.rem(15px);
     &:has(li code) {

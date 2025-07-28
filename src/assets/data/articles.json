@@ -65,10 +65,42 @@
   },
   {
     "id": "9",
-    "title": "Top 10 Coolest Dinosaurs You’ve Never Heard Of",
+    "title": "Top 10 Coolest Dinosaurs You’ve Never Heard Of!!",
     "main_image": "./src/assets/images/a9.png",
     "fileName": "ccf783c2-da72-42dc-b450-894938b13a1b",
     "post_date": "2024-10-20T09:00:00.000Z",
     "time_to_read": 7
+  },
+  {
+    "id": "10",
+    "title": "Dinosaur Extinction: What Killed Them?",
+    "main_image": "./src/assets/images/a10.png",
+    "fileName": "16b98a6e-04d1-4e42-930f-435eeefda5ea",
+    "post_date": "2023-12-03T10:00:00.000Z",
+    "time_to_read": 9
+  },
+  {
+    "id": "11",
+    "title": "Are Birds Really Dinosaurs? The Evolutionary Link Explained",
+    "main_image": "./src/assets/images/a11.png",
+    "fileName": "307571d8-5aac-4eea-a5b6-97bb4e22a852",
+    "post_date": "2024-07-05T10:00:00.000Z",
+    "time_to_read": 3
+  },
+  {
+    "id": "12",
+    "title": "How Dinosaurs Are Named: From Greek Roots to Funny Nicknames",
+    "main_image": "./src/assets/images/a12.png",
+    "fileName": "8efac456-312d-4726-ba7e-627739f218cb",
+    "post_date": "2024-02-25T10:00:00.000Z",
+    "time_to_read": 2
+  },
+  {
+    "id": "13",
+    "title": "Baby Dinosaurs: What We Know About Their Early Life",
+    "main_image": "./src/assets/images/a13.png",
+    "fileName": "b229f669-79b3-4104-ba3a-07822b87b8ab",
+    "post_date": "2025-07-22T10:00:00.000Z",
+    "time_to_read": 8
   }
 ]

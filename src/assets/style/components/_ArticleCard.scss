@@ -39,7 +39,7 @@
   text-wrap: pretty;
   margin-bottom: abs.rem(8px);
   text-transform: capitalize;
-  height: 50px;
+  min-height: 50px;
   position: relative;
   z-index: 10;
 }
