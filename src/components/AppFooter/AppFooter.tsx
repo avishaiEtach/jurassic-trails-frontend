@@ -1,4 +1,3 @@
-import React from "react";
 import { AppFooterComps } from "./hooks/AppFooterComps";
 
 export const AppFooter = () => {

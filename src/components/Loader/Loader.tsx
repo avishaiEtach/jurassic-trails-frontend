@@ -1,4 +1,3 @@
-import React from "react";
 import DinoSteps from "../../assets/images/loader_dino_steps.svg?react";
 
 export const Loader = () => {

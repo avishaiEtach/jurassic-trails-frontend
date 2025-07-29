@@ -1,4 +1,3 @@
-import React from "react";
 import { ListBox, ListBoxItem } from "react-aria-components";
 import ArrowUpIcon from "../../../assets/images/arrow_up.svg?react";
 import ArrowDownIcon from "../../../assets/images/arrow_down.svg?react";

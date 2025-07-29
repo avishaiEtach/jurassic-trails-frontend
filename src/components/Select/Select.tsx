@@ -7,7 +7,6 @@ import {
   ListBoxItem,
   Popover,
   Button,
-  SelectValue,
   ListBoxProps,
   Pressable,
 } from "react-aria-components";

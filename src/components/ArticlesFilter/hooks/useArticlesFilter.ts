@@ -1,6 +1,5 @@
 import React, { useEffect, useMemo, useState } from "react";
-import { Dinosaur } from "../../../types/dinosaur";
-import { articles, dinosaurs } from "../../../assets/data/consts";
+import { articles } from "../../../assets/data/consts";
 import { Key } from "react-aria-components";
 import { Article } from "../../../types/article";
 
@@ -104,11 +103,11 @@ export const useArticlesFilter = () => {
     }
   };
 
-  const onClearAllFilter = (ev: React.MouseEvent) => {
+  const onClearAllFilter = () => {
     setSort(null);
   };
 
-  const onClearSort = (ev: React.MouseEvent) => {
+  const onClearSort = () => {
     setSort(null);
   };
 

@@ -136,16 +136,16 @@ export const useDinosFilter = () => {
     setSearchedDino(null);
   };
 
-  const onClearAllFilter = (ev: React.MouseEvent) => {
+  const onClearAllFilter = () => {
     setDietFilter(null);
     setSort(null);
   };
 
-  const onClearDiet = (ev: React.MouseEvent) => {
+  const onClearDiet = () => {
     setDietFilter(null);
   };
 
-  const onClearSort = (ev: React.MouseEvent) => {
+  const onClearSort = () => {
     setSort(null);
   };
 

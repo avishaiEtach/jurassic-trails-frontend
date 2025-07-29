@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 import DateIcon from "../../assets/images/date.svg?react";
 import ClockIcon from "../../assets/images/clock.svg?react";

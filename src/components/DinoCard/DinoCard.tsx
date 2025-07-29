@@ -1,4 +1,3 @@
-import React from "react";
 import { Dinosaur } from "../../types/dinosaur";
 import { Modal } from "../Modal/Modal";
 import { useDinoCard } from "./hooks/useDinoCard";

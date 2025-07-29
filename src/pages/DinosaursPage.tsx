@@ -1,4 +1,3 @@
-import React from "react";
 import { PageHeader } from "../components/PageHeader/PageHeader";
 import { DinosFilter } from "../components/DinosFilter/DinosFilter";
 import { Loader } from "../components/Loader/Loader";

@@ -1,4 +1,3 @@
-import React from "react";
 import RexSkullIcon from "../assets/images/rex_skull.svg?react";
 import ScrollIcon from "../assets/images/scroll.svg?react";
 import DinoStepsIcon from "../assets/images/dino_steps.svg?react";

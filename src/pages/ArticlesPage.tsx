@@ -1,4 +1,3 @@
-import React from "react";
 import { PageHeader } from "../components/PageHeader/PageHeader";
 import { Loader } from "../components/Loader/Loader";
 import { useArticlesFilter } from "../components/ArticlesFilter/hooks/useArticlesFilter";

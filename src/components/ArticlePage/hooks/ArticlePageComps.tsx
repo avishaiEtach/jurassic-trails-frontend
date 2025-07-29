@@ -1,4 +1,3 @@
-import React from "react";
 import { Components } from "react-markdown";
 import { Loader } from "../../Loader/Loader";
 import { Error404Page } from "../../../pages/Error404Page";

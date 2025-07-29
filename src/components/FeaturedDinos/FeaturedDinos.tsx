@@ -1,4 +1,3 @@
-import React from "react";
 import { DinoCard } from "../DinoCard/DinoCard";
 import { dinosaurs } from "../../assets/data/consts";
 import { Button } from "react-aria-components";

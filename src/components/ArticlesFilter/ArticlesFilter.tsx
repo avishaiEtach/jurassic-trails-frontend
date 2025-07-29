@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import { Button, Label } from "react-aria-components";
 import { Autocomplete } from "../Autocomplete/Autocomplete";
 import { articles } from "../../assets/data/consts";

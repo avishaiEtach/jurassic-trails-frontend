@@ -1,4 +1,3 @@
-import React from "react";
 import { articles } from "../../assets/data/consts";
 import { Button } from "react-aria-components";
 import { ArticleCard } from "../ArticleCard/ArticleCard";

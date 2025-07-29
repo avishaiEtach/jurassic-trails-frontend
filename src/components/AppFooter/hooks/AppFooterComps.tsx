@@ -1,4 +1,4 @@
-import React, { ReactElement, useMemo, useState } from "react";
+import { ReactElement, useState } from "react";
 import FacebookIcon from "../../../assets/images/facebook.svg?react";
 import XIcon from "../../../assets/images/X.svg?react";
 import InstagramIcon from "../../../assets/images/instagram.svg?react";

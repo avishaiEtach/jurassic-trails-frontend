@@ -1,4 +1,3 @@
-import React from "react";
 import { Dinosaur } from "../../../types/dinosaur";
 import LeafIcon from "../../../assets/images/leaf.svg?react";
 import MeatIcon from "../../../assets/images/meat.svg?react";

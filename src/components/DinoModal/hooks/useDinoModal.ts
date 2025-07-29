@@ -1,4 +1,3 @@
-import React from "react";
 import { Dinosaur } from "../../../types/dinosaur";
 
 interface UseDinoModalProps {

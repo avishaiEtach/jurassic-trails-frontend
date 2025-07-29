@@ -1,5 +1,4 @@
-import React from "react";
-import { Button, Focusable, Pressable } from "react-aria-components";
+import { Button, Pressable } from "react-aria-components";
 import DateIcon from "../../assets/images/date.svg?react";
 import ClockIcon from "../../assets/images/clock.svg?react";
 import { Article } from "../../types/article";

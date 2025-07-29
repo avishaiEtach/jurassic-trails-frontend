@@ -1,11 +1,9 @@
-import React, { useEffect, useRef, useState } from "react";
 import logo from "../../assets/images/logo2.png";
 import { Button, Pressable } from "react-aria-components";
 import HamburgerIcon from "../../assets/images/hamburger.svg?react";
 import { useAppHeader } from "./hooks/useAppHeader";
 import { navRoutes } from "../routes/routesConfig";
-import { Link, NavLink, useNavigate } from "react-router-dom";
-import { ROUTES } from "../routes/routes";
+import { NavLink } from "react-router-dom";
 
 export const AppHeader = () => {
   const { showNav, onClickCloseNav, onClickHamburger, navRef, onClickLogo } =

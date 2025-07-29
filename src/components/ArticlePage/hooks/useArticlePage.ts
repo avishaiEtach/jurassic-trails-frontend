@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { articles, imageMap } from "../../../assets/data/consts";
 import { Article } from "../../../types/article";
 import frontMatter from "front-matter";

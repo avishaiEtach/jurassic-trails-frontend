@@ -1,6 +1,5 @@
-import React, { useEffect } from "react";
 import { DinosFilterComps } from "./hooks/DinosFilterComps";
-import { Button, Label, ListBox, ListBoxItem } from "react-aria-components";
+import { Button, Label } from "react-aria-components";
 import { DinoSortKey, useDinosFilter } from "./hooks/useDinosFilter";
 import { Autocomplete } from "../Autocomplete/Autocomplete";
 import { dietArray, dinosaurs } from "../../assets/data/consts";

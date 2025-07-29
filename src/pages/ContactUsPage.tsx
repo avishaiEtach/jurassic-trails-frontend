@@ -1,4 +1,3 @@
-import React from "react";
 import { PageHeader } from "../components/PageHeader/PageHeader";
 import { Input, TextArea } from "react-aria-components";
 import contact_us_image from "../assets/images/contact_us.svg";

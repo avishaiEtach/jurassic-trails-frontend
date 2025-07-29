@@ -1,4 +1,3 @@
-import React from "react";
 import { Dinosaur } from "../../types/dinosaur";
 import { useDinoModal } from "./hooks/useDinoModal";
 import { DinoModalComps } from "./hooks/DinoModalComps";
