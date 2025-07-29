@@ -4,7 +4,7 @@ import { Button } from "react-aria-components";
 import { ArticleCard } from "../ArticleCard/ArticleCard";
 
 export const PopularArticles = () => {
-  const popularArticles = articles.slice(0, 8);
+  const popularArticles = articles.slice(0, 6);
   return (
     <section className="wrapper popular-articles-container">
       <div className="popular-articles-header-container">
