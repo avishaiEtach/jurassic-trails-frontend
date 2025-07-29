@@ -1,12 +1,3 @@
-///refrence website https://wordmarks.webflow.io/
-
-///color plannte
-// --text: #040316;
-// --background: #ffffff;
-// --primary: #a8c66c;
-// --secondary: #847647;
-// --accent: #e8e2d3;?react
-
 import { AppHeader } from "./components/AppHeader/AppHeader";
 import { AppFooter } from "./components/AppFooter/AppFooter";
 import { Route, Routes } from "react-router-dom";
