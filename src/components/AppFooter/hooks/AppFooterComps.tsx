@@ -1,6 +1,6 @@
 import { ReactElement, useState } from "react";
 import FacebookIcon from "../../../assets/images/facebook.svg?react";
-import XIcon from "../../../assets/images/X.svg?react";
+import XIcon from "../../../assets/images/x.svg?react";
 import InstagramIcon from "../../../assets/images/instagram.svg?react";
 import LinkedinIcon from "../../../assets/images/linkedin.svg?react";
 import { Pressable } from "react-aria-components";
