@@ -2,7 +2,7 @@
   {
     "id": "1",
     "title": "How Nature Shaped the Lives of Dinosaurs",
-    "main_image": "./src/assets/images/a1.png",
+    "main_image": "./src/assets/images/articles/a1.png",
     "fileName": "3de1525c-fdf3-4f8b-8291-7b76c24fb62d",
     "post_date": "2025-03-10T22:00:00.000Z",
     "time_to_read": 3
@@ -10,7 +10,7 @@
   {
     "id": "2",
     "title": "The Age of Dinosaurs: Mesozoic Era Explained",
-    "main_image": "./src/assets/images/a2.png",
+    "main_image": "./src/assets/images/articles/a2.png",
     "fileName": "f79be178-71af-41be-9ef1-30c4ca580409",
     "post_date": "2025-04-02T22:00:00.000Z",
     "time_to_read": 5
@@ -18,7 +18,7 @@
   {
     "id": "3",
     "title": "Top 10 Biggest Dinosaurs Ever Discovered",
-    "main_image": "./src/assets/images/a3.png",
+    "main_image": "./src/assets/images/articles/a3.png",
     "fileName": "cb4e3e70-e6b4-469e-9698-c21f12f1297c",
     "post_date": "2025-02-02T22:00:00.000Z",
     "time_to_read": 2
@@ -26,7 +26,7 @@
   {
     "id": "4",
     "title": "Why Did Dinosaurs Have Feathers?",
-    "main_image": "./src/assets/images/a4.png",
+    "main_image": "./src/assets/images/articles/a4.png",
     "fileName": "6c1bb51d-da34-47d8-8f2d-6cfc5f9e522d",
     "post_date": "2024-11-07T22:00:00.000Z",
     "time_to_read": 7
@@ -34,7 +34,7 @@
   {
     "id": "5",
     "title": "Carnivores vs Herbivores: Dinosaur Survival Strategies",
-    "main_image": "./src/assets/images/a5.png",
+    "main_image": "./src/assets/images/articles/a5.png",
     "fileName": "a3ca6240-c687-4141-a3aa-0a2c9cb8701a",
     "post_date": "2024-08-24T22:00:00.000Z",
     "time_to_read": 4
@@ -42,7 +42,7 @@
   {
     "id": "6",
     "title": "Fossil Hunting: How Paleontologists Discover Dinosaurs",
-    "main_image": "./src/assets/images/a6.png",
+    "main_image": "./src/assets/images/articles/a6.png",
     "fileName": "3b935af7-eaa6-4737-89bb-f958da553212",
     "post_date": "2024-08-12T22:00:00.000Z",
     "time_to_read": 2
@@ -50,7 +50,7 @@
   {
     "id": "7",
     "title": "From Bones to Beasts: How Scientists Reconstruct Dinosaurs",
-    "main_image": "./src/assets/images/a7.png",
+    "main_image": "./src/assets/images/articles/a7.png",
     "fileName": "a75a9947-de9b-4620-b5a1-5a3af84d5a47",
     "post_date": "2025-04-10T09:00:00.000Z",
     "time_to_read": 3
@@ -58,7 +58,7 @@
   {
     "id": "8",
     "title": "Mistaken Monsters: Famous Paleontology Mistakes in History",
-    "main_image": "./src/assets/images/a8.png",
+    "main_image": "./src/assets/images/articles/a8.png",
     "fileName": "649ed5d8-81aa-4777-8729-401e46257805",
     "post_date": "2023-09-12T09:00:00.000Z",
     "time_to_read": 10
@@ -66,7 +66,7 @@
   {
     "id": "9",
     "title": "Top 10 Coolest Dinosaurs You’ve Never Heard Of!!",
-    "main_image": "./src/assets/images/a9.png",
+    "main_image": "./src/assets/images/articles/a9.png",
     "fileName": "ccf783c2-da72-42dc-b450-894938b13a1b",
     "post_date": "2024-10-20T09:00:00.000Z",
     "time_to_read": 7
@@ -74,7 +74,7 @@
   {
     "id": "10",
     "title": "Dinosaur Extinction: What Killed Them?",
-    "main_image": "./src/assets/images/a10.png",
+    "main_image": "./src/assets/images/articles/a10.png",
     "fileName": "16b98a6e-04d1-4e42-930f-435eeefda5ea",
     "post_date": "2023-12-03T10:00:00.000Z",
     "time_to_read": 9
@@ -82,7 +82,7 @@
   {
     "id": "11",
     "title": "Are Birds Really Dinosaurs? The Evolutionary Link Explained",
-    "main_image": "./src/assets/images/a11.png",
+    "main_image": "./src/assets/images/articles/a11.png",
     "fileName": "307571d8-5aac-4eea-a5b6-97bb4e22a852",
     "post_date": "2024-07-05T10:00:00.000Z",
     "time_to_read": 3
@@ -90,7 +90,7 @@
   {
     "id": "12",
     "title": "How Dinosaurs Are Named: From Greek Roots to Funny Nicknames",
-    "main_image": "./src/assets/images/a12.png",
+    "main_image": "./src/assets/images/articles/a12.png",
     "fileName": "8efac456-312d-4726-ba7e-627739f218cb",
     "post_date": "2024-02-25T10:00:00.000Z",
     "time_to_read": 2
@@ -98,9 +98,25 @@
   {
     "id": "13",
     "title": "Baby Dinosaurs: What We Know About Their Early Life",
-    "main_image": "./src/assets/images/a13.png",
+    "main_image": "./src/assets/images/articles/a13.png",
     "fileName": "b229f669-79b3-4104-ba3a-07822b87b8ab",
     "post_date": "2025-07-22T10:00:00.000Z",
     "time_to_read": 8
+  },
+  {
+    "id": "14",
+    "title": "Dinosaur Tracks and What They Tell Us",
+    "main_image": "./src/assets/images/articles/a14.png",
+    "fileName": "f7431c33-c326-426d-949d-bbe8e55d9148",
+    "post_date": "2023-07-30T22:00:00.000Z",
+    "time_to_read": 7
+  },
+  {
+    "id": "15",
+    "title": "Underwater Reptiles: Meet the Marine Dinosaurs’ Cousins",
+    "main_image": "./src/assets/images/articles/a15.png",
+    "fileName": "8adb4a14-ebc3-4455-9996-075032b00726",
+    "post_date": "2025-07-03T10:30:00.000Z",
+    "time_to_read": 5
   }
 ]

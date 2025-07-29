@@ -2,7 +2,7 @@
   {
     "id": "1",
     "name": "tyrannosaurus rex",
-    "card_image": "./src/assets/images/rex.png",
+    "card_image": "./src/assets/images/dinosaurs/rex.png",
     "period": "late cretaceous",
     "diet": "carnivore",
     "length": 12,
@@ -14,7 +14,7 @@
   {
     "id": "2",
     "name": "triceratops",
-    "card_image": "./src/assets/images/triceratops.png",
+    "card_image": "./src/assets/images/dinosaurs/triceratops.png",
     "period": "late cretaceous",
     "diet": "herbivore",
     "length": 9,
@@ -26,7 +26,7 @@
   {
     "id": "3",
     "name": "apatosaurus",
-    "card_image": "./src/assets/images/apatosaurus.png",
+    "card_image": "./src/assets/images/dinosaurs/apatosaurus.png",
     "period": "late jurassic",
     "diet": "herbivore",
     "length": 22,
@@ -38,7 +38,7 @@
   {
     "id": "4",
     "name": "velociraptor",
-    "card_image": "./src/assets/images/velociraptor.png",
+    "card_image": "./src/assets/images/dinosaurs/velociraptor.png",
     "period": "late cretaceous",
     "diet": "carnivore",
     "length": 2,
@@ -50,7 +50,7 @@
   {
     "id": "5",
     "name": "mosasaurus",
-    "card_image": "./src/assets/images/mosasaurus.png",
+    "card_image": "./src/assets/images/dinosaurs/mosasaurus.png",
     "period": "Late Cretaceous",
     "diet": "carnivore",
     "length": 15,
@@ -62,7 +62,7 @@
   {
     "id": "6",
     "name": "allosaurus",
-    "card_image": "./src/assets/images/allosaurus.png",
+    "card_image": "./src/assets/images/dinosaurs/allosaurus.png",
     "period": "Late Jurassic",
     "diet": "carnivore",
     "length": 12,
@@ -74,7 +74,7 @@
   {
     "id": "7",
     "name": "parasaurolophus",
-    "card_image": "./src/assets/images/parasaurolophus.png",
+    "card_image": "./src/assets/images/dinosaurs/parasaurolophus.png",
     "period": "Late Cretaceous",
     "diet": "herbivore",
     "length": 10,
@@ -86,7 +86,7 @@
   {
     "id": "8",
     "name": "anhanguera",
-    "card_image": "./src/assets/images/anhanguera.png",
+    "card_image": "./src/assets/images/dinosaurs/anhanguera.png",
     "period": "Early Cretaceous",
     "diet": "piscivore",
     "length": 4.5,
@@ -98,7 +98,7 @@
   {
     "id": "9",
     "name": "microraptor",
-    "card_image": "./src/assets/images/microraptor.png",
+    "card_image": "./src/assets/images/dinosaurs/microraptor.png",
     "period": "Early Cretaceous",
     "diet": "insectivore",
     "length": 0.8,
@@ -110,7 +110,7 @@
   {
     "id": "10",
     "name": "spinosaurus",
-    "card_image": "./src/assets/images/spinosaurus.png",
+    "card_image": "./src/assets/images/dinosaurs/spinosaurus.png",
     "period": "Late Cretaceous",
     "diet": "piscivore",
     "length": 15,
@@ -122,7 +122,7 @@
   {
     "id": "11",
     "name": "pteranodon",
-    "card_image": "./src/assets/images/pteranodon.png",
+    "card_image": "./src/assets/images/dinosaurs/pteranodon.png",
     "period": "Late Cretaceous",
     "diet": "piscivore",
     "length": 6,
@@ -134,7 +134,7 @@
   {
     "id": "12",
     "name": "stegosaurus",
-    "card_image": "./src/assets/images/stegosaurus.png",
+    "card_image": "./src/assets/images/dinosaurs/stegosaurus.png",
     "period": "Late Jurassic",
     "diet": "herbivore",
     "length": 9,
@@ -146,7 +146,7 @@
   {
     "id": "13",
     "name": "pachycephalosaurus",
-    "card_image": "./src/assets/images/pachycephalosaurus.png",
+    "card_image": "./src/assets/images/dinosaurs/pachycephalosaurus.png",
     "period": "Late Cretaceous",
     "diet": "herbivore",
     "length": 4.5,
@@ -158,7 +158,7 @@
   {
     "id": "14",
     "name": "ankylosaurus",
-    "card_image": "./src/assets/images/ankylosaurus.png",
+    "card_image": "./src/assets/images/dinosaurs/ankylosaurus.png",
     "period": "Late Cretaceous",
     "diet": "herbivore",
     "length": 8,
@@ -170,7 +170,7 @@
   {
     "id": "15",
     "name": "maiasaura",
-    "card_image": "./src/assets/images/maiasaura.png",
+    "card_image": "./src/assets/images/dinosaurs/maiasaura.png",
     "period": "Late Cretaceous",
     "diet": "herbivore",
     "length": 8,
@@ -182,7 +182,7 @@
   {
     "id": "16",
     "name": "carnotaurus",
-    "card_image": "./src/assets/images/carnotaurus.png",
+    "card_image": "./src/assets/images/dinosaurs/carnotaurus.png",
     "period": "Late Cretaceous",
     "diet": "carnivore",
     "length": 8,
@@ -194,7 +194,7 @@
   {
     "id": "17",
     "name": "giganotosaurus",
-    "card_image": "./src/assets/images/giganotosaurus.png",
+    "card_image": "./src/assets/images/dinosaurs/giganotosaurus.png",
     "period": "Late Cretaceous",
     "diet": "carnivore",
     "length": 13,
@@ -206,7 +206,7 @@
   {
     "id": "18",
     "name": "ichthyosaurus",
-    "card_image": "./src/assets/images/ichthyosaurus.png",
+    "card_image": "./src/assets/images/dinosaurs/ichthyosaurus.png",
     "period": "Early Jurassic",
     "diet": "piscivore",
     "length": 2.5,
@@ -218,7 +218,7 @@
   {
     "id": "19",
     "name": "xixianykus",
-    "card_image": "./src/assets/images/xixianykus.png",
+    "card_image": "./src/assets/images/dinosaurs/xixianykus.png",
     "period": "Late Cretaceous",
     "diet": "insectivore",
     "length": 0.5,
@@ -230,7 +230,7 @@
   {
     "id": "20",
     "name": "plesiosaurus",
-    "card_image": "./src/assets/images/plesiosaurus.png",
+    "card_image": "./src/assets/images/dinosaurs/plesiosaurus.png",
     "period": "Early Jurassic",
     "diet": "piscivore",
     "length": 3.5,
@@ -242,7 +242,7 @@
   {
     "id": "21",
     "name": "quetzalcoatlus",
-    "card_image": "./src/assets/images/quetzalcoatlus.png",
+    "card_image": "./src/assets/images/dinosaurs/quetzalcoatlus.png",
     "period": "Late Cretaceous",
     "diet": "carnivore",
     "length": 10,
@@ -254,7 +254,7 @@
   {
     "id": "22",
     "name": "dilophosaurus",
-    "card_image": "./src/assets/images/dilophosaurus.png",
+    "card_image": "./src/assets/images/dinosaurs/dilophosaurus.png",
     "period": "Early Jurassic",
     "diet": "carnivore",
     "length": 7,
@@ -266,7 +266,7 @@
   {
     "id": "23",
     "name": "therizinosaurus",
-    "card_image": "./src/assets/images/therizinosaurus.png",
+    "card_image": "./src/assets/images/dinosaurs/therizinosaurus.png",
     "period": "Late Cretaceous",
     "diet": "herbivore",
     "length": 10,
@@ -278,7 +278,7 @@
   {
     "id": "24",
     "name": "yangchuanosaurus",
-    "card_image": "./src/assets/images/yangchuanosaurus.png",
+    "card_image": "./src/assets/images/dinosaurs/yangchuanosaurus.png",
     "period": "Late Jurassic",
     "diet": "carnivore",
     "length": 9,
@@ -290,7 +290,7 @@
   {
     "id": "25",
     "name": "euhelopus",
-    "card_image": "./src/assets/images/euhelopus.png",
+    "card_image": "./src/assets/images/dinosaurs/euhelopus.png",
     "period": "Early Cretaceous",
     "diet": "herbivore",
     "length": 20,
@@ -302,7 +302,7 @@
   {
     "id": "26",
     "name": "rebbachisaurus",
-    "card_image": "./src/assets/images/rebbachisaurus.png",
+    "card_image": "./src/assets/images/dinosaurs/rebbachisaurus.png",
     "period": "Late Cretaceous",
     "diet": "herbivore",
     "length": 17,
@@ -314,7 +314,7 @@
   {
     "id": "27",
     "name": "minmi",
-    "card_image": "./src/assets/images/minmi.png",
+    "card_image": "./src/assets/images/dinosaurs/minmi.png",
     "period": "Early Cretaceous",
     "diet": "herbivore",
     "length": 3,
@@ -326,7 +326,7 @@
   {
     "id": "28",
     "name": "styracosaurus",
-    "card_image": "./src/assets/images/styracosaurus.png",
+    "card_image": "./src/assets/images/dinosaurs/styracosaurus.png",
     "period": "Late Cretaceous",
     "diet": "herbivore",
     "length": 5.5,
@@ -338,7 +338,7 @@
   {
     "id": "29",
     "name": "oviraptor",
-    "card_image": "./src/assets/images/oviraptor.png",
+    "card_image": "./src/assets/images/dinosaurs/oviraptor.png",
     "period": "Late Cretaceous",
     "diet": "omnivore",
     "length": 2,
@@ -350,7 +350,7 @@
   {
     "id": "30",
     "name": "iguanodon",
-    "card_image": "./src/assets/images/iguanodon.png",
+    "card_image": "./src/assets/images/dinosaurs/iguanodon.png",
     "period": "Early Cretaceous",
     "diet": "herbivore",
     "length": 10,

@@ -15,7 +15,7 @@ const dietArray = [
   "insectivore",
 ] as Dinosaur["diet"][];
 
-const images = import.meta.glob("../../assets/images/*.png", {
+const images = import.meta.glob("../../assets/images/**/*.png", {
   eager: true,
   import: "default",
 });
