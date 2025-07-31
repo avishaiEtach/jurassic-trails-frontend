@@ -2,8 +2,8 @@ import logo from "../../assets/images/logo2.png";
 import { Button, Pressable } from "react-aria-components";
 import HamburgerIcon from "../../assets/images/hamburger.svg?react";
 import { useAppHeader } from "./hooks/useAppHeader";
-import { navRoutes } from "../routes/routesConfig";
 import { NavLink } from "react-router-dom";
+import { navRoutes } from "../../routes/routesConfig";
 
 export const AppHeader = () => {
   const { showNav, onClickCloseNav, onClickHamburger, navRef, onClickLogo } =

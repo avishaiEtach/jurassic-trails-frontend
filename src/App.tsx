@@ -1,12 +1,12 @@
 import { AppHeader } from "./components/AppHeader/AppHeader";
 import { AppFooter } from "./components/AppFooter/AppFooter";
 import { Route, Routes } from "react-router-dom";
-import { routesConfig } from "./components/routes/routesConfig";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "./assets/style/main.scss";
 import { useEffect } from "react";
 import { ScrollToTop } from "./components/ScrollToTop/ScrollToTop";
+import { routesConfig } from "./routes/routesConfig";
 
 function App() {
   useEffect(() => {

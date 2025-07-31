@@ -8,7 +8,7 @@ import {
 } from "react-aria-components";
 import { dinosaurs } from "../../assets/data/consts";
 import { useNavigate } from "react-router-dom";
-import { ROUTES } from "../routes/routes";
+import { ROUTES } from "../../routes/routes";
 
 export const Hero = () => {
   const [selectDinoId, setSelectDinoId] = useState<string>("");

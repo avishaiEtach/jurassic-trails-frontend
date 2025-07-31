@@ -4,13 +4,13 @@ import XIcon from "../../../assets/images/x.svg?react";
 import InstagramIcon from "../../../assets/images/instagram.svg?react";
 import LinkedinIcon from "../../../assets/images/linkedin.svg?react";
 import { Pressable } from "react-aria-components";
-import { navRoutes } from "../../routes/routesConfig";
 import { NavLink, useNavigate } from "react-router-dom";
-import { ROUTES } from "../../routes/routes";
 import { Modal } from "../../Modal/Modal";
 import { PrivacyPolicy } from "../../PrivacyPolicy/PrivacyPolicy";
 import { TermsOfUse } from "../../TermsOfUse/TermsOfUse";
 import { FAQ } from "../../FAQ/FAQ";
+import { ROUTES } from "../../../routes/routes";
+import { navRoutes } from "../../../routes/routesConfig";
 
 export const AppFooterComps = () => {
   const [chosenLegal, setChosenLegal] = useState<{

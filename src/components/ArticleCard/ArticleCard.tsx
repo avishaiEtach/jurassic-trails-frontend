@@ -4,7 +4,7 @@ import ClockIcon from "../../assets/images/clock.svg?react";
 import { Article } from "../../types/article";
 import { imageMap } from "../../assets/data/consts";
 import { useNavigate } from "react-router-dom";
-import { ROUTES } from "../routes/routes";
+import { ROUTES } from "../../routes/routes";
 
 interface ArticleCardProps {
   article: Article;

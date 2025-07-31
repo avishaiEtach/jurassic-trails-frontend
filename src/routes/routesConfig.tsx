@@ -1,10 +1,10 @@
-import { AboutUsPage } from "../../pages/AboutUsPage";
-import { ArticlesPage } from "../../pages/ArticlesPage";
-import { ContactUsPage } from "../../pages/ContactUsPage";
-import { DinosaursPage } from "../../pages/DinosaursPage";
-import { Error404Page } from "../../pages/Error404Page";
-import { HomePage } from "../../pages/HomePage";
-import { ArticlePage } from "../ArticlePage/ArticlePage";
+import { ArticlePage } from "../components/ArticlePage/ArticlePage";
+import { AboutUsPage } from "../pages/AboutUsPage";
+import { ArticlesPage } from "../pages/ArticlesPage";
+import { ContactUsPage } from "../pages/ContactUsPage";
+import { DinosaursPage } from "../pages/DinosaursPage";
+import { Error404Page } from "../pages/Error404Page";
+import { HomePage } from "../pages/HomePage";
 import { ROUTES } from "./routes";
 
 export const routesConfig = [
